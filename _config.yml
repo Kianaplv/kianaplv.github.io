@@ -123,8 +123,8 @@ brand_color: "#91a7ff"
 
 # You can custom selection style
 selection:
-  color: "#ffffff"
-#  background_color: "yellow"
+#  color: "#ffffff"
+  background_color: "#ffecb2"
 
 # Night/Dark mode
 # Default mode is "auto", "auto" is for auto nightshift
@@ -173,7 +173,7 @@ banner:
 #   start_at: 0             # Video start time
 #   image: null             # Image banner source
 #   opacity: 1.0            # Banner opacity (100% is 1.0)
-   background: "#1f242a"  # Banner background (Could be a image)
+   background: "theme_color"  # Banner background (Could be a image)
    height: "450px"         # Banner default height
 #   min_height: null        # Banner minimum height
 #   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
