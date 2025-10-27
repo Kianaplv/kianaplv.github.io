@@ -21,9 +21,9 @@ $spacing-unit:     30px !default;
 $text-color:       #1e293b !default;
 $background-color: #fff !default;
 
-$grey-color:       #1e293b !default;
+$grey-color:       #1e293b !default; //my dark blue text color
 $grey-color-light: #ffffff !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-dark:  #adb5bd !default;
 
 $white-color: #ffffff !default;
 
@@ -38,7 +38,7 @@ $footer-text-color: lighten(invert($theme-color), 25%) !default;
 $footer-background-color: darken($theme-color, 5%) !default;
 
 $banner-height: 640px !default;
-$banner-text-color: $white-color !default;
+$banner-text-color: #ffffff !default;
 $banner-background: rgba(0,0,0,0) !default;
 
 // Width of the content area
