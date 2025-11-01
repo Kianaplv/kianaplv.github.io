@@ -1,4 +1,15 @@
-home:
-  heading: "Kiana Pahlevan Portfolio"
-  subheading: "I'm Kiana. I'm 20 years old."
-  banner: "Your image url"
+- name: Home
+  link: /
+  icon: fas fa-home
+
+- name: About
+  link: /about.html
+  icon: fas fa-user
+
+- name: Projects
+  link: /projects.html
+  icon: fas fa-project-diagram
+
+- name: Blog
+  link: /blog.html
+  icon: fas fa-blog
