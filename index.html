@@ -89,10 +89,10 @@ banner: ""
 }
 
 .project-card {
-    background: var(--card-bg-color);
+    background: #f3f4f6;
     padding: 1.5rem;
     border-radius: 8px;
-    border: 1px solid var(--border-color);
+    border: 1px solid #e9ecef;
     transition: transform 0.2s ease;
 }
 
@@ -102,7 +102,7 @@ banner: ""
 
 .project-card h3 {
     margin-top: 0;
-    color: var(--brand-color);
+    color: #6366f1;
 }
 
 .education-overview {
@@ -112,13 +112,25 @@ banner: ""
 .education-item {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: var(--card-bg-color);
+    background: #f3f4f6;
     border-radius: 6px;
-    border: 1px solid var(--border-color);
+    border: 1px solid #e9ecef);
 }
 
 .education-item h3 {
     margin: 0 0 0.5rem 0;
-    color: var(--brand-color);
+    color: #6366f1;
+}
+@media (prefers-color-scheme: dark) {
+  .project-card,
+  .education-item {
+    background: #323945 !important; /* رنگ تاریک */
+    border: 1px solid #adb5bd !important;
+  }
+}
+.dark-mode .project-card,
+.dark-mode .education-item {
+  background: #323945 !important;
+  border: 1px solid #adb5bd !important;
 }
 </style>
