@@ -25,7 +25,14 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Portfolio
-email: kiana.pahlevan05@gmail.com
+
+# Social settings
+github_username: "Kianaplv"
+linkedin_username: "Kiana Pahlevan"
+email: "kiana.pahlevan05@gmail.com"
+phone: "+98 920 656 0763"
+location: "Tehran, Iran"
+
 author: Kiana Pahlevan
 
 # Copyright setting
@@ -239,6 +246,7 @@ click_to_top:
 # Build settings
 # highlighter: none
 markdown: kramdown
+permalink: pretty
 kramdown:
   input: GFM
 
