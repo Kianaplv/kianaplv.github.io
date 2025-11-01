@@ -108,158 +108,90 @@ title: About Me
 <style>
 /* استایل برای headingها و متن‌ها */
 h2 {
-    color: #1e293b;
-    border-bottom: 2px solid #6366f1;
+    color: #0A0C0F !important;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
 h3 {
-    color: #1e293b;
+    color: #0A0C0F !important;
 }
 
 p, li {
-    color: #374151;
+    color: #1e293b !important;
 }
 
-/* استایل about */
-.about-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.about-container section {
-    margin-bottom: 3rem;
-}
-
-.education-item, .experience-item {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid #e9ecef;
-}
-
-.education-item h3, .experience-item h3 {
-    margin-top: 0;
-    color: #6366f1;
-}
-
-.institution {
-    font-weight: bold;
-    margin: 0.5rem 0;
-}
-
-.period {
-    color: #6b7280;
-    font-style: italic;
-    margin: 0.25rem 0;
-}
-
-.gpa {
-    margin: 0.25rem 0;
-}
-
-.position {
-    margin: 1rem 0;
-    padding-left: 1rem;
-    border-left: 3px solid #6366f1;
-}
-
-.skills-grid {
+/* استایل کارت‌ها */
+.project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
+    margin-top: 1rem;
 }
 
-.skill-category {
-    background: #f8f9fa;
+.project-card {
+    background: #f3f4f6 !important;
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid #e9ecef;
+    transition: transform 0.2s ease;
 }
 
-.skill-category h3 {
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
     margin-top: 0;
     color: #6366f1;
-    border-bottom: 1px solid #e9ecef;
-    padding-bottom: 0.5rem;
 }
 
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+.education-overview {
+    margin: 2rem 0;
 }
 
-.skill-tag {
-    background: #6366f1;
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.certificates-list, .languages-list {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
+.education-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f3f4f6 !important;
+    border-radius: 6px;
     border: 1px solid #e9ecef;
 }
 
-.certificates-list li, .languages-list li {
-    margin-bottom: 0.5rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #e9ecef;
-}
-
-.certificates-list li:last-child, .languages-list li:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
+.education-item h3 {
+    margin: 0 0 0.5rem 0;
+    color: #6366f1;
 }
 
 /* برای حالت تاریک */
 @media (prefers-color-scheme: dark) {
-    h2, h3, p, li {
-
-
-
+    h2 {
+        color: #74c0fc !important;
+    }
+    h3, p, li {
         color: #ffffff !important;
     }
     
-    .education-item,
-    .experience-item,
-    .skill-category,
-    .certificates-list,
-    .languages-list {
+    .project-card,
+    .education-item {
         background: #323945 !important;
         border: 1px solid #4a5568 !important;
     }
-    
-    .period {
-        color: #9ca3af !important;
-    }
 }
 
-.dark-mode h2,
+.dark-mode h2 {
+    color: #74c0fc !important;
+}
 .dark-mode h3,
 .dark-mode p,
 .dark-mode li {
     color: #ffffff !important;
 }
 
-.dark-mode .education-item,
-.dark-mode .experience-item,
-.dark-mode .skill-category,
-.dark-mode .certificates-list,
-.dark-mode .languages-list {
+.dark-mode .project-card,
+.dark-mode .education-item {
     background: #323945 !important;
     border: 1px solid #4a5568 !important;
-}
-
-.dark-mode .period {
-    color: #9ca3af !important;
 }
 </style>
