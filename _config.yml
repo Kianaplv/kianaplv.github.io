@@ -256,7 +256,7 @@ plugins:
 
   
 # Custom variables for your portfolio
-  education:
+education:
   - degree: "B.Sc. Computer Science"
     university: "Amirkabir University of Technology"
     period: "2023 - Present"
