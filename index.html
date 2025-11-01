@@ -1,9 +1,123 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 title: Home
-banner: ""
-
 ---
+
+<section class="featured-projects">
+    <h2>Featured Projects</h2>
+    
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>🏠 Housing Price Prediction - Machine Learning</h3>
+            <ul>
+                <li>Collected and cleaned data from Divar</li>
+                <li>Built models using Linear Regression and XGBoost</li>
+                <li>Improved accuracy by 15% compared to baseline</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>🛒 Shopping App with Java</h3>
+            <ul>
+                <li><a href="https://github.com/MohammadHosseinH/FlowerShop" target="_blank">GitHub Repository</a></li>
+                <li>Collaborative project using Git</li>
+                <li>Implemented SOLID design patterns</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>📖 Hafez Poem and Interpretation Program</h3>
+            <ul>
+                <li><a href="https://github.com/Kianaplv/Hafez-divination" target="_blank">GitHub Repository</a></li>
+                <li>API integration learning</li>
+                <li>Java application development</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>📰 RSS Feed Reader with Java</h3>
+            <ul>
+                <li><a href="https://github.com/Kianaplv/RSS-Reader" target="_blank">GitHub Repository</a></li>
+                <li>HTML source parsing</li>
+                <li>RSS feed processing</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="education-overview">
+    <h2>Education</h2>
+    <div class="education-item">
+        <h3>🎓 B.Sc. Computer Science</h3>
+        <p><strong>Amirkabir University of Technology</strong> | 2023 - Present</p>
+        <p>GPA: 17.6/20 | Tehran, Iran</p>
+    </div>
+    <div class="education-item">
+        <h3>🏆 High School Diploma in Mathematics and Physics</h3>
+        <p><strong>National Organization for Development of Exceptional Talents (NODET)</strong> | 2020 - 2023</p>
+        <p>GPA: 19.51/20 | Tehran, Iran</p>
+    </div>
+</section>
+
+<style>
+:root {
+  --card-bg-color: #f3f4f6;
+  --border-color: #1e293b;
+  --brand-color: #6366f1;
+  --brand-color-dark: #6366f1;
+  --muted-text-color: #6b7280;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-bg-color: #323945;
+    --border-color: #adb5bd;
+    --muted-text-color: #9ca3af;
+  }
+}
+
+.featured-projects {
+    margin: 2rem 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project-card {
+    background: var(--card-bg-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: var(--brand-color);
+}
+
+.education-overview {
+    margin: 2rem 0;
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--card-bg-color);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.education-item h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--brand-color);
+}
+</style>
