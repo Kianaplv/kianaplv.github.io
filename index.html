@@ -3,6 +3,7 @@ layout: home
 title: Home
 banner: ""
 ---
+
 <section class="education-overview">
     <h2>Education</h2>
     <div class="education-item">
@@ -17,7 +18,7 @@ banner: ""
     </div>
 </section>
 
-<section class="mini-projects">
+<section class="featured-projects">
     <h2>Featured Projects</h2>
     
     <div class="project-grid">
@@ -58,7 +59,25 @@ banner: ""
         </div>
     </div>
 </section>
+
 <style>
+/* استایل برای headingها و متن‌ها */
+h2 {
+    color: #1e293b;
+    border-bottom: 2px solid #6366f1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    color: #1e293b;
+}
+
+p, li {
+    color: #374151;
+}
+
+/* استایل کارت‌ها */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -103,16 +122,27 @@ banner: ""
 
 /* برای حالت تاریک */
 @media (prefers-color-scheme: dark) {
-  .project-card,
-  .education-item {
-    background: #323945 !important;
-    border: 1px solid #4a5568 !important;
-  }
+    h2, h3, p, li {
+        color: #ffffff !important;
+    }
+    
+    .project-card,
+    .education-item {
+        background: #323945 !important;
+        border: 1px solid #4a5568 !important;
+    }
+}
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li {
+    color: #ffffff !important;
 }
 
 .dark-mode .project-card,
 .dark-mode .education-item {
-  background: #323945 !important;
-  border: 1px solid #4a5568 !important;
+    background: #323945 !important;
+    border: 1px solid #4a5568 !important;
 }
 </style>
