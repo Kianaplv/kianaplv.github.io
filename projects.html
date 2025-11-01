@@ -1,0 +1,141 @@
+---
+layout: page
+title: Projects
+---
+
+<div class="projects-container">
+    <section class="project-category">
+        <h2>💻 Mini Projects</h2>
+        
+        <div class="project-item">
+            <h3>Housing Price Prediction - Machine Learning</h3>
+            <div class="project-details">
+                <ul>
+                    <li>Collected and cleaned data from Divar, including handling missing values and performing feature engineering</li>
+                    <li>Built predictive models using Linear Regression and XGBoost to estimate property prices</li>
+                    <li>Improved prediction accuracy, reducing RMSE by 15% compared to baseline models</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>Shopping App with Java</h3>
+            <div class="project-links">
+                <a href="https://github.com/MohammadHosseinH/FlowerShop" target="_blank" class="github-link">
+                    🔗 GitHub Repository
+                </a>
+            </div>
+            <div class="project-details">
+                <ul>
+                    <li>Learned how to handle a collaborative project on Git</li>
+                    <li>Learned about design patterns (mostly S.O.L.I.D)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>Hafez Poem and Interpretation Program with Java</h3>
+            <div class="project-links">
+                <a href="https://github.com/Kianaplv/Hafez-divination" target="_blank" class="github-link">
+                    🔗 GitHub Repository
+                </a>
+            </div>
+            <div class="project-details">
+                <ul>
+                    <li>Learning what an API is and how to use it</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>RSS Feed Reader with Java</h3>
+            <div class="project-links">
+                <a href="https://github.com/Kianaplv/RSS-Reader" target="_blank" class="github-link">
+                    🔗 GitHub Repository
+                </a>
+            </div>
+            <div class="project-details">
+                <ul>
+                    <li>Learning what HTML sources are and how to access them</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>Image Viewer with Java</h3>
+            <div class="project-links">
+                <a href="https://github.com/Kianaplv/Image-Viewer" target="_blank" class="github-link">
+                    🔗 GitHub Repository
+                </a>
+            </div>
+            <div class="project-details">
+                <ul>
+                    <li>Learning about Java GUI and Swing library</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+:root {
+  --card-bg-color: #f3f4f6;
+  --border-color: #1e293b;
+  --brand-color: #6366f1;
+  --brand-color-dark: #6366f1;
+  --muted-text-color: #6b7280;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-bg-color: #323945;
+    --border-color: #adb5bd;
+    --muted-text-color: #9ca3af;
+  }
+}
+
+.featured-projects {
+    margin: 2rem 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project-card {
+    background: var(--card-bg-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: var(--brand-color);
+}
+
+.education-overview {
+    margin: 2rem 0;
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--card-bg-color);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.education-item h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--brand-color);
+}
+</style>
