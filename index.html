@@ -63,13 +63,13 @@ banner: ""
 <style>
 /* استایل برای headingها و متن‌ها */
 h2 {
-    color: #0A0C0F !important;
+    color: #000000 !important;  /* مشکی برای حالت light */
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
 h3 {
-    color: #0A0C0F !important;
+    color: #000000 !important;  /* مشکی برای حالت light */
 }
 
 p, li {
@@ -85,7 +85,7 @@ p, li {
 }
 
 .project-card {
-    background: #f3f4f6 !important;
+    background: #f3f4f6 !important;  /* رنگ روشن */
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid #e9ecef;
@@ -109,7 +109,7 @@ p, li {
 .education-item {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: #f3f4f6 !important;
+    background: #f3f4f6 !important;  /* رنگ روشن */
     border-radius: 6px;
     border: 1px solid #e9ecef;
 }
@@ -119,13 +119,10 @@ p, li {
     color: #6366f1;
 }
 
-/* برای حالت تاریک */
+/* برای حالت تاریک - فقط h2 */
 @media (prefers-color-scheme: dark) {
     h2 {
-        color: #74c0fc !important;
-    }
-    h3, p, li {
-        color: #ffffff !important;
+        color: #74c0fc !important;  /* فقط h2 آبی */
     }
     
     .project-card,
@@ -136,12 +133,7 @@ p, li {
 }
 
 .dark-mode h2 {
-    color: #74c0fc !important;
-}
-.dark-mode h3,
-.dark-mode p,
-.dark-mode li {
-    color: #ffffff !important;
+    color: #74c0fc !important;  /* فقط h2 آبی */
 }
 
 .dark-mode .project-card,
