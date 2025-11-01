@@ -6,12 +6,12 @@ banner: ""
 
 <section class="education-overview">
     <h2>Education</h2>
-    <div class="education-item">
+    <div class="custom-education-item">
         <h3>🎓 B.Sc. Computer Science</h3>
         <p><strong>Amirkabir University of Technology</strong> | 2023 - Present</p>
         <p>GPA: 17.6/20 | Tehran, Iran</p>
     </div>
-    <div class="education-item">
+    <div class="custom-education-item">
         <h3>🏆 High School Diploma in Mathematics and Physics</h3>
         <p><strong>National Organization for Development of Exceptional Talents (NODET)</strong> | 2020 - 2023</p>
         <p>GPA: 19.51/20 | Tehran, Iran</p>
@@ -22,7 +22,7 @@ banner: ""
     <h2>Featured Projects</h2>
     
     <div class="project-grid">
-        <div class="project-card">
+        <div class="custom-project-card">
             <h3>🏠 Housing Price Prediction - Machine Learning</h3>
             <ul>
                 <li>Collected and cleaned data from Divar</li>
@@ -31,7 +31,7 @@ banner: ""
             </ul>
         </div>
 
-        <div class="project-card">
+        <div class="custom-project-card">
             <h3>🛒 Shopping App with Java</h3>
             <ul>
                 <li><a href="https://github.com/MohammadHosseinH/FlowerShop" target="_blank">GitHub Repository</a></li>
@@ -40,7 +40,7 @@ banner: ""
             </ul>
         </div>
 
-        <div class="project-card">
+        <div class="custom-project-card">
             <h3>📖 Hafez Poem and Interpretation Program</h3>
             <ul>
                 <li><a href="https://github.com/Kianaplv/Hafez-divination" target="_blank">GitHub Repository</a></li>
@@ -49,7 +49,7 @@ banner: ""
             </ul>
         </div>
 
-        <div class="project-card">
+        <div class="custom-project-card">
             <h3>📰 RSS Feed Reader with Java</h3>
             <ul>
                 <li><a href="https://github.com/Kianaplv/RSS-Reader" target="_blank">GitHub Repository</a></li>
@@ -63,20 +63,20 @@ banner: ""
 <style>
 /* استایل برای headingها و متن‌ها */
 h2 {
-    color: #000000 !important;  /* مشکی برای حالت light */
+    color: #000000 !important;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
 h3 {
-    color: #000000 !important;  /* مشکی برای حالت light */
+    color: #000000 !important;
 }
 
 p, li {
     color: #1e293b !important;
 }
 
-/* استایل کارت‌ها */
+/* استایل کارت‌های جدید */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -84,20 +84,20 @@ p, li {
     margin-top: 1rem;
 }
 
-.project-card {
-    background: #f3f4f6 !important;  /* رنگ روشن */
+.custom-project-card {
+    background: #f8f9fa !important;
     padding: 1.5rem;
     border-radius: 8px;
-    border: 1px solid #e9ecef;
+    border: 1px solid #e9ecef !important;
     transition: transform 0.2s ease;
 }
 
-.project-card:hover {
+.custom-project-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.project-card h3 {
+.custom-project-card h3 {
     margin-top: 0;
     color: #6366f1;
 }
@@ -106,15 +106,15 @@ p, li {
     margin: 2rem 0;
 }
 
-.education-item {
+.custom-education-item {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: #f3f4f6 !important;  /* رنگ روشن */
+    background: #f8f9fa !important;
     border-radius: 6px;
-    border: 1px solid #e9ecef;
+    border: 1px solid #e9ecef !important;
 }
 
-.education-item h3 {
+.custom-education-item h3 {
     margin: 0 0 0.5rem 0;
     color: #6366f1;
 }
@@ -122,22 +122,22 @@ p, li {
 /* برای حالت تاریک - فقط h2 */
 @media (prefers-color-scheme: dark) {
     h2 {
-        color: #74c0fc !important;  /* فقط h2 آبی */
+        color: #74c0fc !important;
     }
     
-    .project-card,
-    .education-item {
+    .custom-project-card,
+    .custom-education-item {
         background: #323945 !important;
         border: 1px solid #4a5568 !important;
     }
 }
 
 .dark-mode h2 {
-    color: #74c0fc !important;  /* فقط h2 آبی */
+    color: #74c0fc !important;
 }
 
-.dark-mode .project-card,
-.dark-mode .education-item {
+.dark-mode .custom-project-card,
+.dark-mode .custom-education-item {
     background: #323945 !important;
     border: 1px solid #4a5568 !important;
 }
