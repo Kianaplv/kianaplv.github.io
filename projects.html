@@ -78,64 +78,103 @@ title: Projects
 </div>
 
 <style>
-:root {
-  --card-bg-color: #f3f4f6;
-  --border-color: #1e293b;
-  --brand-color: #6366f1;
-  --brand-color-dark: #6366f1;
-  --muted-text-color: #6b7280;
+/* استایل برای headingها و متن‌ها */
+h2 {
+    color: #1e293b;
+    border-bottom: 2px solid #6366f1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --card-bg-color: #323945;
-    --border-color: #adb5bd;
-    --muted-text-color: #9ca3af;
-  }
+h3 {
+    color: #1e293b;
 }
 
-.featured-projects {
-    margin: 2rem 0;
+p, li {
+    color: #374151;
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
+/* استایل پروژه‌ها */
+.projects-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.project-card {
-    background: var(--card-bg-color);
+.project-category {
+    margin-bottom: 3rem;
+}
+
+.project-item {
+    background: #f8f9fa;
     padding: 1.5rem;
+    margin-bottom: 1.5rem;
     border-radius: 8px;
-    border: 1px solid var(--border-color);
+    border: 1px solid #e9ecef;
     transition: transform 0.2s ease;
 }
 
-.project-card:hover {
-    transform: translateY(-2px);
+.project-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.project-card h3 {
+.project-item h3 {
     margin-top: 0;
-    color: var(--brand-color);
+    color: #6366f1;
+    border-bottom: 2px solid #6366f1;
+    padding-bottom: 0.5rem;
 }
 
-.education-overview {
-    margin: 2rem 0;
+.project-links {
+    margin: 1rem 0;
 }
 
-.education-item {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: var(--card-bg-color);
-    border-radius: 6px;
-    border: 1px solid var(--border-color);
+.github-link {
+    display: inline-block;
+    background: #6366f1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
 }
 
-.education-item h3 {
-    margin: 0 0 0.5rem 0;
-    color: var(--brand-color);
+.github-link:hover {
+    background: #5a5fcf;
+    text-decoration: none;
+}
+
+.project-details ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.project-details li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* برای حالت تاریک */
+@media (prefers-color-scheme: dark) {
+    h2, h3, p, li {
+        color: #ffffff !important;
+    }
+    
+    .project-item {
+        background: #323945 !important;
+        border: 1px solid #4a5568 !important;
+    }
+}
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li {
+    color: #ffffff !important;
+}
+
+.dark-mode .project-item {
+    background: #323945 !important;
+    border: 1px solid #4a5568 !important;
 }
 </style>
