@@ -63,18 +63,17 @@ banner: ""
 <style>
 /* استایل برای headingها و متن‌ها */
 h2 {
-    color: #1e293b;
-    border-bottom: 2px solid #6366f1;
+    color: #0A0C0F;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
 h3 {
-    color: #1e293b;
+    color: #0A0C0F;
 }
 
 p, li {
-    color: #374151;
+    color: #1e293b;
 }
 
 /* استایل کارت‌ها */
@@ -86,7 +85,7 @@ p, li {
 }
 
 .project-card {
-    background: #f8f9fa;
+    background: #f3f4f6;
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid #e9ecef;
@@ -110,7 +109,7 @@ p, li {
 .education-item {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: #f8f9fa;
+    background: #f3f4f6;
     border-radius: 6px;
     border: 1px solid #e9ecef;
 }
@@ -122,7 +121,10 @@ p, li {
 
 /* برای حالت تاریک */
 @media (prefers-color-scheme: dark) {
-    h2, h3, p, li {
+    h2 {
+        color: #74c0fc !important;
+    }
+    h3, p, li {
         color: #ffffff !important;
     }
     
@@ -133,7 +135,9 @@ p, li {
     }
 }
 
-.dark-mode h2,
+.dark-mode h2 {
+    color: #74c0fc !important;
+}
 .dark-mode h3,
 .dark-mode p,
 .dark-mode li {
