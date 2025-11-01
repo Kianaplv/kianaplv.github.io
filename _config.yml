@@ -113,7 +113,7 @@ header_transparent: false
 # snowwhite: "#ffffff"
 
 # Active theme color (your site’s main background color)
-theme_color: "coolblack"
+theme_color: "spacegrey"
 
 
 # Default brand colors:
@@ -123,7 +123,7 @@ theme_color: "coolblack"
 # purpleblue: "#91a7ff"
 
 # Active brand color (used for buttons, links, etc.)
-brand_color: "spacegrey"
+brand_color: "91a7ff"
 
 # You can custom selection style
 selection:
