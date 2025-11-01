@@ -123,7 +123,7 @@ theme_color: "coolblack"
 # purpleblue: "#91a7ff"
 
 # Active brand color (used for buttons, links, etc.)
-brand_color: "#91a7ff"
+brand_color: "spacegrey"
 
 # You can custom selection style
 selection:
@@ -178,7 +178,7 @@ banner:
 #   image: null             # Image banner source
 #   opacity: 1.0            # Banner opacity (100% is 1.0)
    background: "323945"  # Banner background (Could be a image)
-   height: "450px"         # Banner default height
+   height: "400px"         # Banner default height
 #   min_height: null        # Banner minimum height
 #   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
 #   subheading_style: null  # Custom subheading style (e.g. color: gold)
