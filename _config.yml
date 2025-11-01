@@ -50,10 +50,7 @@ author: Kiana Pahlevan
 copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-
+  Computer Science Student | Amirkabir University of Technology
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "" # the favicon for your site
@@ -158,16 +155,16 @@ night_mode: "on"
 # this and add the path to the pages in order as they should show up
 header_pages:
    - index.html
-   - archives.html
+   - project.html
 #   - categories.html
 #   - tags.html
    - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Portfolio"
-#     subheading: "Your awesome subheading"
+defaults:
+   home:
+     heading: "Portfolio"
+     subheading: "Kiana Pahlevan Portfolio"
 #    banner: ""
 
 # Banner default settings
@@ -256,3 +253,16 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
+
+  
+# Custom variables for your portfolio
+  education:
+  - degree: "B.Sc. Computer Science"
+    university: "Amirkabir University of Technology"
+    period: "2023 - Present"
+    gpa: "17.6/20"
+    
+  - degree: "High School Diploma in Mathematics and Physics"
+    school: "National Organization for Development of Exceptional Talents"
+    period: "2020 - 2023"
+    gpa: "19.51/20"
