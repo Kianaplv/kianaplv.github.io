@@ -65,57 +65,84 @@ banner: ""
   /* رنگ‌های custom برای حالت light */
   --light-card-bg: #f8f9fa;
   --light-card-border: #e9ecef;
-  --light-heading-color: ##0B0D0F;
+  --light-heading-color: #0B0D0F;  /* # اضافه حذف شد */
   --light-text-color: #1e293b;
   
   /* رنگ‌های custom برای حالت dark */
   --dark-card-bg: #323945;
   --dark-card-border: #4a5568;
   --dark-heading-color: #74c0fc;
-  --dark-text-color: #ffffff;
+  --dark-text-color: #e2e8f0;
 }
 
-/* استایل برای حالت light (پیش‌فرض) */
-h2 {
-    color: var(--light-heading-color) !important;
+/* استایل پایه - بدون !important */
+.education-overview h2,
+.featured-projects h2 {
+    color: var(--light-heading-color);
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--brand-color);
 }
 
-h3 {
-    color: var(--light-heading-color) !important;
+.custom-project-card h3,
+.custom-education-item h3 {
+    color: var(--light-heading-color);
+    margin-top: 0;
 }
 
-p, li {
-    color: var(--light-text-color) !important;
+.custom-project-card p,
+.custom-project-card li,
+.custom-education-item p {
+    color: var(--light-text-color);
 }
 
-.custom-project-card {
-    background: var(--light-card-bg) !important;
-    border: 1px solid var(--light-card-border) !important;
-}
-
+/* کارت ها */
+.custom-project-card,
 .custom-education-item {
-    background: var(--light-card-bg) !important;
-    border: 1px solid var(--light-card-border) !important;
+    background: var(--light-card-bg);
+    border: 1px solid var(--light-card-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
 }
 
-/* برای حالت تاریک */
-@media (prefers-color-scheme: dark) {
-    h2 {
-        color: var(--dark-heading-color) !important;
+.custom-project-card:hover,
+.custom-education-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* برای حالت تاریک - با کلاس body که تم اضافه میکنه */
+body.dark {
+    .education-overview h2,
+    .featured-projects h2 {
+        color: var(--dark-heading-color);
+        border-bottom-color: var(--dark-heading-color);
     }
     
-    h3, p, li {
-        color: var(--dark-text-color) !important;
+    .custom-project-card h3,
+    .custom-education-item h3 {
+        color: var(--dark-heading-color);
+    }
+    
+    .custom-project-card p,
+    .custom-project-card li,
+    .custom-education-item p {
+        color: var(--dark-text-color);
     }
     
     .custom-project-card,
     .custom-education-item {
-        background: var(--dark-card-bg) !important;
-        border: 1px solid var(--dark-card-border) !important;
+        background: var(--dark-card-bg);
+        border: 1px solid var(--dark-card-border);
+    }
+    
+    .custom-project-card:hover,
+    .custom-education-item:hover {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     }
 }
+
 /* بقیه استایل‌ها */
 .project-grid {
     display: grid;
@@ -124,34 +151,22 @@ p, li {
     margin-top: 1rem;
 }
 
-.custom-project-card {
-    padding: 1.5rem;
-    border-radius: 8px;
-    transition: transform 0.2s ease;
-}
-
-.custom-project-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.custom-project-card h3 {
-    margin-top: 0;
-    color: #6366f1;
-}
-
 .education-overview {
     margin: 2rem 0;
 }
 
 .custom-education-item {
     margin-bottom: 1.5rem;
-    padding: 1rem;
-    border-radius: 6px;
 }
 
-.custom-education-item h3 {
-    margin: 0 0 0.5rem 0;
-    color: #6366f1;
+/* لینک ها */
+.custom-project-card a {
+    color: var(--brand-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.custom-project-card a:hover {
+    text-decoration: underline;
 }
 </style>
