@@ -55,10 +55,10 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 
 /* استایل آیکون‌های اجتماعی بدون دایره */
 .social-links {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .social-links a {
