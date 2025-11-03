@@ -8,10 +8,10 @@
 - lang: fr
   img: https://cdn.countryflags.com/thumbs/france/flag-400.png
   text: French
-
-#- lang: fa
-#  img: https://www.countryflags.com/thumbs/iran/flag-400.png
-#  text: Chinese(Simple)
+  
+- lang: fa
+    img: https://cdn.countryflags.com/thumbs/iran/flag-400.png
+    text: فارسی
 
 #- lang: ja
  # img: https://cdn.countryflags.com/thumbs/japan/flag-400.png
