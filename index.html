@@ -7,12 +7,12 @@ banner: ""
 <section class="education-overview">
     <h2>Education</h2>
     <div class="custom-education-item">
-        <h3>🎓 B.Sc. Computer Science</h3>
+        <h3> B.Sc. Computer Science</h3>
         <p><strong>Amirkabir University of Technology</strong> | 2023 - Present</p>
         <p>GPA: 17.6/20 | Tehran, Iran</p>
     </div>
     <div class="custom-education-item">
-        <h3>🏆 High School Diploma in Mathematics and Physics</h3>
+        <h3> High School Diploma in Mathematics and Physics</h3>
         <p><strong>National Organization for Development of Exceptional Talents (NODET)</strong> | 2020 - 2023</p>
         <p>GPA: 19.51/20 | Tehran, Iran</p>
     </div>
@@ -69,7 +69,7 @@ banner: ""
   --light-brand-color: #6366f1;       /* رنگ برند (بنفش) */
   --light-link-color: #6366f1;        /* رنگ لینک‌ها */
   --light-card-bg: #f3f4f6;           /*背景 کارت */
-  --light-card-border: thin solid black;       /* حاشیه کارت */
+  --light-card-border: #5685FB;       /* حاشیه کارت */
   
   /* ===== رنگ‌های حالت دارک ===== */
   --dark-primary-text: #e2e8f0;       /* متن اصلی */
@@ -78,7 +78,7 @@ banner: ""
   --dark-brand-color: #91a7ff;        /* رنگ برند (آبی) */
   --dark-link-color: #91a7ff;         /* رنگ لینک‌ها */
   --dark-card-bg: #323945;            /*背景 کارت */
-  --dark-card-border: thin solid black;        /* حاشیه کارت */
+  --dark-card-border: #d5dffb;        /* حاشیه کارت */
 }
 
 /* ===== تنظیمات پیشفرض (حالت لایت) ===== */
@@ -114,6 +114,7 @@ body {
   color: var(--heading-color);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--brand-color);
 }
 
 /* عناوین کارت‌ها */
@@ -122,8 +123,6 @@ body {
   color: var(--brand-color);
   margin-top: 0;
   margin-bottom: 0.5rem;
-  border-bottom: 2px solid var(--card-border);
-
 }
 
 /* متن‌های اصلی */
@@ -168,7 +167,7 @@ a:hover {
 .custom-project-card,
 .custom-education-item {
   background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  border: 2px solid var(--card-border);
   border-radius: 8px;
   padding: 1.5rem;
   transition: all 0.3s ease;
@@ -180,11 +179,13 @@ a:hover {
 .custom-project-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--brand-color);
 }
 
 [data-theme="dark"] .custom-education-item:hover,
 [data-theme="dark"] .custom-project-card:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: var(--brand-color);
 }
 
 /* ===== لayout و گرید ===== */
@@ -228,5 +229,6 @@ a:hover {
   color: var(--brand-color);
   position: absolute;
   left: 0;
+  font-weight: bold;
 }
 </style>
