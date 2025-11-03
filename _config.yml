@@ -76,8 +76,12 @@ header_transparent: true
 # If you want to generate website sitemap, you can set true
 # sitemap: false
 
+# RTL support for Persian
+rtl_languages:
+  - fa
+
 # If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
+lang: "en"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
