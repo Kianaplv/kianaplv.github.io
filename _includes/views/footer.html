@@ -2,20 +2,32 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-    <div class="site-footer-inner">
-        {%- assign currentYear = 'now' | date: "%Y" -%}
-        {%- assign copyright = site.copyright
-            | replace: '{currentYear}', currentYear
-            | replace: '{author}', site.author
-            | replace: '(c)', '&copy;'
-            | replace: '(p)', '℗'
-            | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
-        -%}
-      <div>{{ copyright }}</div>
-      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
-      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
-      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
-      <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
+      <!-- لینک‌های اجتماعی فقط با آیکون -->
+      <div class="social-links">
+        {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        {% endif %}
+        
+        {% if site.linkedin_username %}
+          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        {% endif %}
+        
+        {% if site.email %}
+          <a href="mailto:{{ site.email }}" title="Email" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        {% endif %}
+        
+        {% if site.phone %}
+          <a href="tel:{{ site.phone }}" title="Phone" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        {% endif %}
+      </div>
     </div>
   </div>
 </footer>
