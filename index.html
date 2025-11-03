@@ -69,7 +69,7 @@ banner: ""
   --light-brand-color: #6366f1;       /* رنگ برند (بنفش) */
   --light-link-color: #6366f1;        /* رنگ لینک‌ها */
   --light-card-bg: #f3f4f6;           /*背景 کارت */
-  --light-card-border: #242420;       /* حاشیه کارت */
+  --light-card-border: #3b3b38;       /* حاشیه کارت */
   
   /* ===== رنگ‌های حالت دارک ===== */
   --dark-primary-text: #e2e8f0;       /* متن اصلی */
@@ -78,7 +78,7 @@ banner: ""
   --dark-brand-color: #91a7ff;        /* رنگ برند (آبی) */
   --dark-link-color: #91a7ff;         /* رنگ لینک‌ها */
   --dark-card-bg: #323945;            /*背景 کارت */
-  --dark-card-border: #fff4c7;        /* حاشیه کارت */
+  --dark-card-border: #fffbeb;        /* حاشیه کارت */
 }
 
 /* ===== تنظیمات پیشفرض (حالت لایت) ===== */
@@ -122,7 +122,7 @@ body {
   color: var(--brand-color);
   margin-top: 0;
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--card-border);
+  border-bottom: 0.3px solid var(--card-border);
 
 }
 
@@ -168,7 +168,7 @@ a:hover {
 .custom-project-card,
 .custom-education-item {
   background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  border: 0.5px solid var(--card-border);
   border-radius: 4px;
   padding: 1.5rem;
   transition: all 0.3s ease;
@@ -180,13 +180,13 @@ a:hover {
 .custom-project-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: var(--brand-color);
+  border-color: var(--card-border);
 }
 
 [data-theme="dark"] .custom-education-item:hover,
 [data-theme="dark"] .custom-project-card:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  border-color: var(--brand-color);
+  border-color: var(--card-border);
 }
 
 /* ===== لayout و گرید ===== */
