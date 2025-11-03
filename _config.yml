@@ -155,16 +155,16 @@ night_mode: "off"
 # this and add the path to the pages in order as they should show up
 header_pages:
    - index.html
-   - project.html
+#   - project.html
 #   - categories.html
 #   - tags.html
-   - about.html
+#  - about.html
 
 # Page default value
 defaults:
    home:
      heading: "Portfolio"
-     subheading: "Kiana Pahlevan Portfolio"
+     subheading: "summary"
 #    banner: ""
 
 # Banner default settings
@@ -177,7 +177,7 @@ banner:
 #   start_at: 0             # Video start time
 #   image: null             # Image banner source
 #   opacity: 1.0            # Banner opacity (100% is 1.0)
-   background: "323945"  # Banner background (Could be a image)
+   background: "theme_color"  # Banner background (Could be a image)
    height: "400px"         # Banner default height
 #   min_height: null        # Banner minimum height
 #   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
@@ -209,7 +209,7 @@ banner:
 # Click to top settings
 click_to_top:
   light:
-    background_color: "323945"
+    background_color: "f3f4f6"
     color: "#323945"
   dark:
     background_color: "#1f242a"
