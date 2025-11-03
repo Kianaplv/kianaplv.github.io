@@ -11,9 +11,6 @@
 # as you mention an attribution back (credit links in footer or project).
 # See the LICENCE file.
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that.
-#
 # For technical reasons, this file is *NOT* reloaded automatically when you
 # use 'bundle exec jekyll serve'. If you change this file, please restart
 # the server process.
@@ -110,23 +107,7 @@ lang: "en"  # default lang is en
 #     img: https://cdn.countryflags.com/thumbs/russia/flag-400.png
 #     text: Russian
 
-# You can choose a theme color
-# Default theme colors:
-# coolblack: "#1f242a"  # background
-# spacegrey: "#353535"
-# snowwhite: "#ffffff"
-
-# Active theme color (your site’s main background color)
 theme_color: "spacegrey"
-
-
-# Default brand colors:
-# orangered: "#ff5100"
-# greatgold: "#f2cb05"
-# greenblue: "#389092"
-# purpleblue: "#91a7ff"
-
-# Active brand color (used for buttons, links, etc.)
 brand_color: "#91a7ff"
 
 # You can custom selection style
@@ -272,6 +253,6 @@ education:
     gpa: "19.51/20"
 
 skills:
-  programming: ["Java", "C", "Python", "OOP", "Algorithms", "Data Structures", "MySQL", "Hibernate"]
-  technical: ["Git", "LaTeX", "Microsoft Excel"]
-  soft: ["Problem Solving", "Communication", "Teamwork", "Time Management", "Adaptability", "Creativity"]
+  - programming: ["Java", "C", "Python", "OOP", "Algorithms", "Data Structures", "MySQL", "Hibernate"]
+  - technical: ["Git", "LaTeX", "Microsoft Excel"]
+  - soft: ["Problem Solving", "Communication", "Teamwork", "Time Management", "Adaptability", "Creativity"]
