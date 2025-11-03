@@ -177,7 +177,7 @@ banner:
 #   start_at: 0             # Video start time
 #   image: null             # Image banner source
 #   opacity: 1.0            # Banner opacity (100% is 1.0)
-   background: "theme_color"  # Banner background (Could be a image)
+   background: "theme-color"  # Banner background (Could be a image)
    height: "400px"         # Banner default height
 #   min_height: null        # Banner minimum height
 #   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
