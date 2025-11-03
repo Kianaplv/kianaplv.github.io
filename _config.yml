@@ -44,7 +44,7 @@ author: Kiana Pahlevan
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+copyright: ""
 
 description: >- # this means to ignore newlines until "baseurl:"
   Computer Science Student | Amirkabir University of Technology
