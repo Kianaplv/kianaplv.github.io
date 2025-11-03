@@ -64,21 +64,21 @@ banner: ""
 :root {
   /* ===== رنگ‌های حالت لایت ===== */
   --light-primary-text: #1e293b;      /* متن اصلی */
-  --light-secondary-text: #64748b;    /* متن ثانویه */
+  --light-secondary-text: #6b7280;    /* متن ثانویه */
   --light-heading-color: #0B0D0F;     /* عناوین h2, h3 */
   --light-brand-color: #6366f1;       /* رنگ برند (بنفش) */
   --light-link-color: #6366f1;        /* رنگ لینک‌ها */
   --light-card-bg: #f8f9fa;           /*背景 کارت */
-  --light-card-border: #e9ecef;       /* حاشیه کارت */
+  --light-card-border: thin solid black;       /* حاشیه کارت */
   
   /* ===== رنگ‌های حالت دارک ===== */
   --dark-primary-text: #e2e8f0;       /* متن اصلی */
-  --dark-secondary-text: #94a3b8;     /* متن ثانویه */
+  --dark-secondary-text: #9CA3AF;     /* متن ثانویه */
   --dark-heading-color: #74c0fc;      /* عناوین h2, h3 */
   --dark-brand-color: #91a7ff;        /* رنگ برند (آبی) */
   --dark-link-color: #91a7ff;         /* رنگ لینک‌ها */
   --dark-card-bg: #1e293b;            /*背景 کارت */
-  --dark-card-border: #334155;        /* حاشیه کارت */
+  --dark-card-border: thin solid black;        /* حاشیه کارت */
 }
 
 /* ===== تنظیمات پیشفرض (حالت لایت) ===== */
@@ -114,15 +114,16 @@ body {
   color: var(--heading-color);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid var(--brand-color);
 }
 
 /* عناوین کارت‌ها */
 .custom-education-item h3,
 .custom-project-card h3 {
-  color: var(--heading-color);
+  color: var(--brand-color);
   margin-top: 0;
   margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--card-border);
+
 }
 
 /* متن‌های اصلی */
