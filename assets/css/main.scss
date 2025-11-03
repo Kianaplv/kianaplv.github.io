@@ -58,7 +58,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   margin-top: 0.5rem;
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 4.5rem;
 }
 
 .social-links a {
@@ -77,16 +77,16 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 }
 
 .social-links i {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 /* برای موبایل */
 @media (max-width: 768px) {
   .social-links {
-    gap: 2rem;
+    gap: 2.5rem;
   }
   
   .social-links i {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 }
