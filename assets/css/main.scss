@@ -51,52 +51,42 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 @if $selection-background-color == "" {
   $selection-background-color: rgba(invert($brand-color), 0.3);
 }
-/* استایل آیکون‌های اجتماعی */
+@import "yat";
+
+/* استایل آیکون‌های اجتماعی بدون دایره */
 .social-links {
   margin-top: 1.5rem;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
   color: var(--link-color);
   text-decoration: none;
   transition: all 0.3s ease;
-  border-radius: 50%;
-  border: 2px solid var(--card-border);
-  background: var(--card-bg);
+  padding: 0.5rem;
 }
 
 .social-links a:hover {
-  color: white;
-  border-color: var(--brand-color);
-  transform: translateY(-3px) scale(1.1);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  color: var(--brand-color);
+  transform: translateY(-2px) scale(1.2);
 }
 
 .social-links i {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 /* برای موبایل */
 @media (max-width: 768px) {
   .social-links {
-    gap: 1rem;
-  }
-  
-  .social-links a {
-    width: 40px;
-    height: 40px;
+    gap: 1.5rem;
   }
   
   .social-links i {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
-@import "yat";
