@@ -62,31 +62,25 @@ banner: ""
 
 <style>
 :root {
-  /* رنگ‌های اصلی برای حالت light */
-  --light-primary-text: #1e293b;    /* متن اصلی */
-  --light-secondary-text: #6b7280;  /* متن ثانویه */
-  --light-card-bg: #f3f4f6;
+  --light-card-bg: #f8f9fa;
   --light-card-border: #e9ecef;
   --light-heading-color: #0B0D0F;
+  --light-text-color: #1e293b;
   
-  /* رنگ‌های اصلی برای حالت dark */
-  --dark-primary-text: #adb5bd;     /* متن اصلی در دارک */
-  --dark-secondary-text: #9ca3af;   /* متن ثانویه در دارک */
   --dark-card-bg: #323945;
   --dark-card-border: #4a5568;
   --dark-heading-color: #74c0fc;
+  --dark-text-color: #ffffff;
 }
 
-/* متن اصلی برای حالت لایت */
-body {
-  color: var(--light-primary-text);
-}
-
-/* استایل برای عناوین و کارت ها در حالت لایت */
-.education-overview h2,
-.featured-projects h2 {
-    color: var(--light-heading-color);
-    border-bottom: 2px solid var(--brand-color);
+/* استایل پایه برای لایت */
+.custom-project-card,
+.custom-education-item {
+    background: var(--light-card-bg);
+    border: 1px solid var(--light-card-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .custom-project-card h3,
@@ -94,47 +88,22 @@ body {
     color: var(--light-heading-color);
 }
 
-/* متن‌های ثانویه در حالت لایت */
-.custom-project-card p,
-.custom-education-item p,
-.custom-project-card li {
-    color: var(--light-secondary-text);
+/* ✅ حالت دارک درست */
+[data-theme="dark"] .custom-project-card,
+[data-theme="dark"] .custom-education-item {
+    background: var(--dark-card-bg) !important;
+    border: 1px solid var(--dark-card-border) !important;
 }
 
-/* کارت ها در حالت لایت */
-.custom-project-card,
-.custom-education-item {
-    background: var(--light-card-bg);
-    border: 1px solid var(--light-card-border);
+[data-theme="dark"] .custom-project-card h3,
+[data-theme="dark"] .custom-education-item h3 {
+    color: var(--dark-heading-color) !important;
 }
 
-/* برای حالت تاریک */
-body.dark {
-  color: var(--dark-primary-text);  /* تغییر رنگ متن اصلی بدن */
-  
-  .education-overview h2,
-  .featured-projects h2 {
-      color: var(--dark-heading-color);
-      border-bottom-color: var(--dark-heading-color);
-  }
-  
-  .custom-project-card h3,
-  .custom-education-item h3 {
-      color: var(--dark-heading-color);
-  }
-  
-  /* متن‌های ثانویه در حالت دارک */
-  .custom-project-card p,
-  .custom-education-item p,
-  .custom-project-card li {
-      color: var(--dark-secondary-text);
-  }
-  
-  .custom-project-card,
-  .custom-education-item {
-      background: var(--dark-card-bg);
-      border: 1px solid var(--dark-card-border);
-  }
+[data-theme="dark"] .custom-project-card p,
+[data-theme="dark"] .custom-education-item p,
+[data-theme="dark"] .custom-project-card li {
+    color: var(--dark-text-color) !important;
 }
 
 /* بقیه استایل‌ها همون قبلی */
@@ -145,30 +114,23 @@ body.dark {
     margin-top: 1rem;
 }
 
-.custom-project-card,
-.custom-education-item {
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.custom-project-card:hover,
-.custom-education-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-body.dark .custom-project-card:hover,
-body.dark .custom-education-item:hover {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
 .education-overview {
     margin: 2rem 0;
 }
 
 .custom-education-item {
     margin-bottom: 1.5rem;
+}
+
+.custom-education-item:hover,
+.custom-project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .custom-education-item:hover,
+[data-theme="dark"] .custom-project-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .custom-project-card a {
