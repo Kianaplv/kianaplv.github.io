@@ -83,10 +83,10 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 /* برای موبایل */
 @media (max-width: 768px) {
   .social-links {
-    gap: 1.5rem;
+    gap: 2rem;
   }
   
   .social-links i {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 }
