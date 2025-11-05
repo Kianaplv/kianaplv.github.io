@@ -51,6 +51,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 @if $selection-background-color == "" {
   $selection-background-color: rgba(invert($brand-color), 0.3);
 }
+
 @import "yat";
 
 /* استایل آیکون‌های اجتماعی بدون دایره */
@@ -89,18 +90,17 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   .social-links i {
     font-size: 1.5em;
   }
+}  // این } اضافه کردم
 
-
-
-  //skills
+/* Skills */
 .skill-icon img {
-    width: 70px;
-    height: 70px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    filter: grayscale(0.1);
+  width: 70px;
+  height: 70px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: grayscale(0.1);
 }
 
 .skill-icon:hover img {
-    transform: scale(1.3) rotate(5deg);
-    filter: grayscale(0) brightness(1.1);
+  transform: scale(1.3) rotate(5deg);
+  filter: grayscale(0) brightness(1.1);
 }
