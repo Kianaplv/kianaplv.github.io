@@ -93,15 +93,9 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 } 
 
 /* Skills Section */
-
 .skills-section {
     margin: 3rem 0;
     text-align: center;
-}
-
-.skills-section h2 {
-    color: var(--heading-color);
-    margin-bottom: 2rem;
 }
 
 .skills-container {
@@ -111,81 +105,105 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 
 .skills-group {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .skills-icons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);  /* 4 تا در هر ردیف */
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
     justify-items: center;
 }
 
-.skill-icon {
+.skill-box {
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(135deg, var(--card-bg), transparent);
+    border: 1px solid var(--card-border);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    cursor: pointer;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.skill-icon img {
-    width: 70px;
-    height: 70px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    filter: grayscale(0.1);
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--brand-color);
 }
 
-.skill-icon:hover img {
-    transform: scale(1.3) ;
-    filter: grayscale(0) brightness(1.1);
+.skill-box img {
+    width: 80px;
+    height: 80px;
+    transition: all 0.3s ease;
+    filter: grayscale(0.2);
 }
 
-/* Tooltip برای نمایش اسم */
-.skill-icon::after {
-    content: attr(data-name);
+.skill-box:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+/* Tooltip مثل کد تو */
+.skill-tooltip {
     position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -20px;
+    background: linear-gradient(135deg, var(--card-bg), var(--background-color));
     color: var(--primary-text);
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     border-radius: 8px;
-    font-size: 0.9em;
+    font-size: 1.4rem;
     font-weight: 600;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
     z-index: 10;
 }
 
-.skill-icon:hover::after {
+.skill-box:hover .skill-tooltip {
     opacity: 1;
     visibility: visible;
-    bottom: -45px;
+    top: -25px;
 }
 
-/* برای موبایل */
+/* ریسپانسیو */
 @media (max-width: 768px) {
     .skills-icons {
-        grid-template-columns: repeat(3, 1fr);  /* 3 تا در موبایل */
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
     
-    .skill-icon img {
-        width: 60px;
-        height: 60px;
+    .skill-box {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .skill-box img {
+        width: 70px;
+        height: 70px;
     }
 }
 
 @media (max-width: 480px) {
     .skills-icons {
-        grid-template-columns: repeat(2, 1fr);  /* 2 تا در موبایل کوچک */
-        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
     
-    .skill-icon img {
-        width: 50px;
-        height: 50px;
+    .skill-box {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .skill-box img {
+        width: 60px;
+        height: 60px;
     }
 }
