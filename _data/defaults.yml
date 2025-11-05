@@ -2,14 +2,14 @@
   link: /
   icon: fas fa-home
 
-- name: About
-  link: /about.html
-  icon: fas fa-user
+#- name: About
+#  link: /about.html
+ # icon: fas fa-user
 
-- name: Projects
-  link: /projects.html
-  icon: fas fa-project-diagram
+#- name: Projects
+ # link: /projects.html
+  #icon: fas fa-project-diagram
 
-- name: Blog
-  link: /blog.html
-  icon: fas fa-blog
+#- name: Blog
+ # link: /blog.html
+  #icon: fas fa-blog
