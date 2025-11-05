@@ -91,87 +91,88 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   }
 }
 
-/* Skills Section Styles */
+/* Skills Section - Minimal Style */
 .skills-section {
     margin: 3rem 0;
+    text-align: center;
 }
 
 .skills-section h2 {
     color: var(--heading-color);
-    padding-bottom: 0.5rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid var(--brand-color);
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.skills-group {
+    margin-bottom: 2.5rem;
 }
 
-.skill-category {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    padding: 1.5rem;
+.skills-group h3 {
+    color: var(--secondary-text);
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.skill-icon {
+    position: relative;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.skill-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+.skill-icon i {
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
 }
 
-.skill-category h3 {
-    color: var(--brand-color);
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 1.1em;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.skill-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.8rem;
-}
-
-.skill-item {
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    padding: 0.7rem;
-    background: var(--background-color);
-    border-radius: 8px;
-    transition: all 0.2s ease;
-}
-
-.skill-item:hover {
-    background: var(--brand-color);
-    color: white;
-    transform: scale(1.05);
-}
-
-.skill-item i {
-    font-size: 1.2em;
-    width: 20px;
-    text-align: center;
-}
-
-.skill-item span {
-    font-size: 0.9em;
+/* Tooltip برای نمایش اسم موقع هاور */
+.skill-icon::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--card-bg);
+    color: var(--primary-text);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8em;
     font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon:hover::after {
+    opacity: 1;
+    visibility: visible;
+    bottom: -35px;
+}
+
+.skill-icon:hover i {
+    transform: scale(1.2);
 }
 
 /* برای موبایل */
 @media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
+    .skills-icons {
+        gap: 1rem;
     }
     
-    .skill-items {
-        grid-template-columns: repeat(2, 1fr);
+    .skill-icon i {
+        font-size: 2rem;
+    }
+    
+    .skills-group h3 {
+        font-size: 1em;
     }
 }
