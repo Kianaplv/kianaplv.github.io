@@ -62,33 +62,55 @@ title: Home
     </div>
 </section>
 
-
 <!-- Work Experience Section -->
-<div class="work-experience">
-    <h2>Work Experience</h2>
-    
-    <div class="job-item">
+<!-- Work Experience Section -->
+<div class="work-experience-section">
+  <h2>WORK EXPERIENCE</h2>
+  
+  <div class="custom-job-item">
+    <div class="job-header">
+      <div>
         <h3>Data Scientist</h3>
         <div class="company">Thousandways Co Ltd.</div>
-        <div class="date">Oct 2025 - Present</div>
-        <ul>
-            <li>Developing and implementing machine learning models for data analysis and business intelligence</li>
-            <li>Collaborating with cross-functional teams to deploy data-driven solutions</li>
-            <li>Utilizing statistical analysis and predictive modeling to solve complex business problems</li>
-        </ul>
+      </div>
+      <div class="job-meta">
+        <div class="job-date">Oct 2025 - Present</div>
+      </div>
     </div>
-    
-    <div class="job-item">
+    <ul>
+      <li>Developing and implementing machine learning models for data analysis and business intelligence</li>
+      <li>Working with large datasets to extract actionable insights and support decision-making</li>
+      <li>Collaborating with cross-functional teams to deploy data-driven solutions</li>
+      <li>Utilizing statistical analysis and predictive modeling to solve complex business problems</li>
+    </ul>
+  </div>
+
+  <div class="custom-job-item">
+    <div class="job-header">
+      <div>
         <h3>Undergraduate Teaching Assistant</h3>
         <div class="company">Amirkabir University of Technology</div>
-        <div class="date">2024 - Present</div>
-        <div class="course">Advanced Programming and Workshop</div>
-        <div class="instructor">for Dr. Mehdi Ghatee (Spring 2024 - Present)</div>
-        <div class="instructor">for Dr. Ahmadian (Fall 2025 - Present)</div>
-        <div class="course">Data Structures and Algorithms</div>
-        <div class="instructor">for Dr. Mahsa Saadat (Fall 2025 - Present)</div>
+      </div>
+      <div class="job-meta">
+        <div class="job-date">2024 - Present</div>
+      </div>
     </div>
+    <div class="course-item">
+      <span class="course-name">Advanced Programming and Workshop</span>
+      <span class="instructor">for Dr. Mehdi Ghatee (Spring 2024 - Present)</span>
+    </div>
+    <div class="course-item">
+      <span class="course-name">Advanced Programming and Workshop</span>
+      <span class="instructor">for Dr. Ahmadian (Fall 2025 - Present)</span>
+    </div>
+    <div class="course-item">
+      <span class="course-name">Data Structures and Algorithms</span>
+      <span class="instructor">for Dr. Mahsa Saadat (Fall 2025 - Present)</span>
+    </div>
+  </div>
 </div>
+
+
 
 
 <section class="featured-projects">
@@ -138,30 +160,42 @@ title: Home
 </section>
 
 <!-- Volunteer Experience Section -->
-<div class="volunteer-experience">
-    <h2>Volunteer Experience</h2>
-    
-    <div class="volunteer-item">
+<div class="volunteer-section">
+  <h2>VOLUNTEER EXPERIENCE</h2>
+  
+  <div class="custom-volunteer-item">
+    <div class="volunteer-header">
+      <div>
         <h3>Member of the executive team of Khayyam-Turing</h3>
         <div class="organization">Amirkabir University of Technology</div>
-        <div class="date">2024</div>
-        <ul>
-            <li>Assisted in organizing and coordinating technical events and workshops</li>
-            <li>Collaborated with team members to ensure smooth event execution</li>
-            <li>Gained experience in event planning and team coordination</li>
-        </ul>
+      </div>
+      <div class="volunteer-meta">
+        <div class="volunteer-date">2024</div>
+      </div>
     </div>
-    
-    <div class="volunteer-item">
+    <ul>
+      <li>Assisted in organizing and coordinating technical events and workshops</li>
+      <li>Collaborated with team members to ensure smooth event execution</li>
+      <li>Gained experience in event planning and team coordination</li>
+    </ul>
+  </div>
+
+  <div class="custom-volunteer-item">
+    <div class="volunteer-header">
+      <div>
         <h3>Member of the executive team of DAI-DAY</h3>
         <div class="organization">Amirkabir University of Technology</div>
-        <div class="date">2025</div>
-        <ul>
-            <li>Participated in organizing artificial intelligence related events and activities</li>
-            <li>Worked in a team environment to manage event logistics</li>
-            <li>Developed communication and organizational skills</li>
-        </ul>
+      </div>
+      <div class="volunteer-meta">
+        <div class="volunteer-date">2025</div>
+      </div>
     </div>
+    <ul>
+      <li>Participated in organizing artificial intelligence related events and activities</li>
+      <li>Worked in a team environment to manage event logistics</li>
+      <li>Developed communication and organizational skills</li>
+    </ul>
+  </div>
 </div>
 
   
@@ -373,91 +407,11 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-/* work experience*/
 
-.work-experience,
-.volunteer-experience {
-    margin-bottom: 25px;
-}
-
-.work-experience h2,
-.volunteer-experience h2 {
-    color: var(--heading-color);
-    border-bottom: 1px solid var( --card-border);
-    padding-bottom: 4px;
-    margin-bottom: 12px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.job-item,
-.volunteer-item {
-    margin-bottom: 15px;
-    padding: 12px;
-    background-color: var(--bg-color);
-    border-radius: 3px;
-    color: var(--primary-text);
-}
-
-.job-item h3,
-.volunteer-item h3 {
-    color: var(--primary-text);
-    margin-bottom: 4px;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.company,
-.organization {
-    font-weight: bold;
-    color: var(--primary-text);
-    font-size: 0.9rem;
-}
-
-.date {
-    color: var(--primary-text);
-    font-style: italic;
-    font-size: 0.85rem;
-}
-
-.course {
-    font-weight: bold;
-    margin-top: 6px;
-    font-size: 0.9rem;
-    color: var(--text-color);
-}
-
-.instructor {
-    color: var(--primary-light);
-    margin-left: 8px;
-    font-size: 0.85rem;
-}
-
-.job-item ul,
-.volunteer-item ul {
-    margin-top: 8px;
-    margin-left: 16px;
-    margin-bottom: 0;
-}
-
-.job-item li,
-.volunteer-item li {
-    margin-bottom: 3px;
-    line-height: 1.4;
-    font-size: 0.9rem;
-    color: var(--primary-text);
-}
-
-
-.job-item a:hover,
-.volunteer-item a:hover {
-    text-decoration: underline;
-}
-  
 /* ===== استایل اسکیل‌ها ===== */
 .skills-section {
   margin: 3rem 0;
-  text-align: center;
+  text-align: left;
 }
 
 .skills-container {
@@ -536,6 +490,121 @@ a:hover {
 
 
 
+
+  
+/* ===== WORK EXPERIENCE & VOLUNTEER ===== */
+.work-experience-section,
+.volunteer-section {
+  margin: 2rem 0;
+}
+
+.work-experience-section > h2,
+.volunteer-section > h2 {
+  color: var(--heading-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--heading-color);
+}
+
+.custom-job-item,
+.custom-volunteer-item {
+  background: var(--card-bg);
+  border: 0.7px solid var(--card-border);
+  border-radius: 4px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.custom-job-item:hover,
+.custom-volunteer-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--card-border);
+}
+
+[data-theme="dark"] .custom-job-item:hover,
+[data-theme="dark"] .custom-volunteer-item:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: var(--card-border);
+}
+
+.custom-job-item h3,
+.custom-volunteer-item h3 {
+  color: var(--brand-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 0.5rem;
+}
+
+.job-header,
+.volunteer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.job-meta,
+.volunteer-meta {
+  text-align: right;
+}
+
+.company,
+.organization {
+  color: var(--brand-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.job-date,
+.volunteer-date {
+  color: var(--secondary-text);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.course-item {
+  margin-bottom: 0.8rem;
+}
+
+.course-name {
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.instructor {
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.custom-job-item ul,
+.custom-volunteer-item ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+.custom-job-item li,
+.custom-volunteer-item li {
+  color: var(--primary-text);
+  margin-bottom: 0.4rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.custom-job-item li:before,
+.custom-volunteer-item li:before {
+  content: "•";
+  color: var(--brand-color);
+  position: absolute;
+  left: 0;
+}
+  
+
+
 /* ===== ریسپانسیو برای موبایل ===== */
 @media (max-width: 768px) {
   /* هیرو سکشن */
@@ -607,6 +676,7 @@ a:hover {
   }
 }
 
+    
 @media (max-width: 480px) {
   /* برای گوشی‌های کوچک */
   .hero-section {
