@@ -58,7 +58,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 .site-header,
 .site-header a,
 .site-header .page-link {
-  color: var(--heading-color) !important;
+  color: var(--primary-text) !important;
   transition: color 0.3s ease;
 }
 
