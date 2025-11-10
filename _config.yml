@@ -197,8 +197,8 @@ click_to_top:
     background_color: "f3f4f6"
     color: "#323945"
   dark:
-    background_color: "#1f242a"
-    color: "#323945"
+    background_color: "#323945"
+    color: "#1f242a"
 
 # Disqus comments
 # disqus:
