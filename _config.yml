@@ -149,7 +149,7 @@ defaults:
    home:
      heading: "Portfolio"
      subheading: "summary"
-     avatar: "/assets/images/avatar.jpg"
+     avatar: "/assets/images/avatar.png"
 #    banner: ""
 
 # Banner default settings
