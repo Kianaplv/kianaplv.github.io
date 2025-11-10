@@ -27,6 +27,70 @@ title: Home
     </div>
 </section>
 
+
+<section class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skills-group">
+            <div class="skills-icons">
+                <div class="skill-box" data-name="Java">
+                    <img src="{{ '/assets/icons/java-svgrepo-com.svg' | relative_url }}" alt="Java">
+                    <div class="skill-tooltip">Java</div>
+                </div>
+                <div class="skill-box" data-name="Python">
+                    <img src="{{ '/assets/icons/python-svgrepo-com.svg' | relative_url }}" alt="Python">
+                    <div class="skill-tooltip">Python</div>
+                </div>
+                <div class="skill-box" data-name="MySQL">
+                    <img src="{{ '/assets/icons/mysql-svgrepo-com.svg' | relative_url }}" alt="MySQL">
+                    <div class="skill-tooltip">MySQL</div>
+                </div>
+                <div class="skill-box" data-name="Docker">
+                    <img src="{{ '/assets/icons/docker-svgrepo-com.svg' | relative_url }}" alt="Docker">
+                    <div class="skill-tooltip">Docker</div>
+                </div>
+                <div class="skill-box" data-name="Linux">
+                    <img src="{{ '/assets/icons/linux-svgrepo-com.svg' | relative_url }}" alt="Linux">
+                    <div class="skill-tooltip">Linux</div>
+                </div>
+                <div class="skill-box" data-name="JetBrains">
+                    <img src="{{ '/assets/icons/jetbrains-svgrepo-com.svg' | relative_url }}" alt="JetBrains">
+                    <div class="skill-tooltip">JetBrains</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Work Experience Section -->
+<div class="work-experience">
+    <h2>Work Experience</h2>
+    
+    <div class="job-item">
+        <h3>Data Scientist</h3>
+        <div class="company">Thousandways Co Ltd.</div>
+        <div class="date">Oct 2025 - Present</div>
+        <ul>
+            <li>Developing and implementing machine learning models for data analysis and business intelligence</li>
+            <li>Collaborating with cross-functional teams to deploy data-driven solutions</li>
+            <li>Utilizing statistical analysis and predictive modeling to solve complex business problems</li>
+        </ul>
+    </div>
+    
+    <div class="job-item">
+        <h3>Undergraduate Teaching Assistant</h3>
+        <div class="company">Amirkabir University of Technology</div>
+        <div class="date">2024 - Present</div>
+        <div class="course">Advanced Programming and Workshop</div>
+        <div class="instructor">for Dr. Mehdi Ghatee (Spring 2024 - Present)</div>
+        <div class="instructor">for Dr. Ahmadian (Fall 2025 - Present)</div>
+        <div class="course">Data Structures and Algorithms</div>
+        <div class="instructor">for Dr. Mahsa Saadat (Fall 2025 - Present)</div>
+    </div>
+</div>
+
+
 <section class="featured-projects">
     <h2>Projects</h2>
     
@@ -73,39 +137,33 @@ title: Home
 
 </section>
 
-<section class="skills-section">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div class="skills-group">
-            <div class="skills-icons">
-                <div class="skill-box" data-name="Java">
-                    <img src="{{ '/assets/icons/java-svgrepo-com.svg' | relative_url }}" alt="Java">
-                    <div class="skill-tooltip">Java</div>
-                </div>
-                <div class="skill-box" data-name="Python">
-                    <img src="{{ '/assets/icons/python-svgrepo-com.svg' | relative_url }}" alt="Python">
-                    <div class="skill-tooltip">Python</div>
-                </div>
-                <div class="skill-box" data-name="MySQL">
-                    <img src="{{ '/assets/icons/mysql-svgrepo-com.svg' | relative_url }}" alt="MySQL">
-                    <div class="skill-tooltip">MySQL</div>
-                </div>
-                <div class="skill-box" data-name="Docker">
-                    <img src="{{ '/assets/icons/docker-svgrepo-com.svg' | relative_url }}" alt="Docker">
-                    <div class="skill-tooltip">Docker</div>
-                </div>
-                <div class="skill-box" data-name="Linux">
-                    <img src="{{ '/assets/icons/linux-svgrepo-com.svg' | relative_url }}" alt="Linux">
-                    <div class="skill-tooltip">Linux</div>
-                </div>
-                <div class="skill-box" data-name="JetBrains">
-                    <img src="{{ '/assets/icons/jetbrains-svgrepo-com.svg' | relative_url }}" alt="JetBrains">
-                    <div class="skill-tooltip">JetBrains</div>
-                </div>
-            </div>
-        </div>
+<!-- Volunteer Experience Section -->
+<div class="volunteer-experience">
+    <h2>Volunteer Experience</h2>
+    
+    <div class="volunteer-item">
+        <h3>Member of the executive team of Khayyam-Turing</h3>
+        <div class="organization">Amirkabir University of Technology</div>
+        <div class="date">2024</div>
+        <ul>
+            <li>Assisted in organizing and coordinating technical events and workshops</li>
+            <li>Collaborated with team members to ensure smooth event execution</li>
+            <li>Gained experience in event planning and team coordination</li>
+        </ul>
     </div>
-</section>
+    
+    <div class="volunteer-item">
+        <h3>Member of the executive team of DAI-DAY</h3>
+        <div class="organization">Amirkabir University of Technology</div>
+        <div class="date">2025</div>
+        <ul>
+            <li>Participated in organizing artificial intelligence related events and activities</li>
+            <li>Worked in a team environment to manage event logistics</li>
+            <li>Developed communication and organizational skills</li>
+        </ul>
+    </div>
+</div>
+
   
 <style>
 :root {
@@ -278,7 +336,7 @@ a:hover {
   border-color: var(--card-border);
 }
 
-/* ===== لayout و گرید ===== */
+/* ===== گرید ===== */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -315,6 +373,87 @@ a:hover {
   margin-top: 0.5rem;
 }
 
+/* work experience*/
+
+.work-experience,
+.volunteer-experience {
+    margin-bottom: 25px;
+}
+
+.work-experience h2,
+.volunteer-experience h2 {
+    color: var(--heading-color);
+    border-bottom: 1px solid var( --card-border);
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.job-item,
+.volunteer-item {
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: var(--bg-color);
+    border-radius: 3px;
+    color: var(--primary-text);
+}
+
+.job-item h3,
+.volunteer-item h3 {
+    color: var(--primary-text);
+    margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.company,
+.organization {
+    font-weight: bold;
+    color: var(--primary-text);
+    font-size: 0.9rem;
+}
+
+.date {
+    color: var(--primary-text);
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+.course {
+    font-weight: bold;
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.instructor {
+    color: var(--primary-light);
+    margin-left: 8px;
+    font-size: 0.85rem;
+}
+
+.job-item ul,
+.volunteer-item ul {
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 0;
+}
+
+.job-item li,
+.volunteer-item li {
+    margin-bottom: 3px;
+    line-height: 1.4;
+    font-size: 0.9rem;
+    color: var(--primary-text);
+}
+
+
+.job-item a:hover,
+.volunteer-item a:hover {
+    text-decoration: underline;
+}
+  
 /* ===== استایل اسکیل‌ها ===== */
 .skills-section {
   margin: 3rem 0;
@@ -394,6 +533,8 @@ a:hover {
   visibility: visible;
   top: -25px;
 }
+
+
 
 /* ===== ریسپانسیو برای موبایل ===== */
 @media (max-width: 768px) {
