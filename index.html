@@ -246,6 +246,13 @@ title: Home
   --sign-color: var(--dark-signs);
 }
 
+[data-theme="dark"] .custom-job-item:hover,
+[data-theme="dark"] .custom-volunteer-item:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: var(--card-border);
+}
+
+  
   /* ===== استایل هیرو سکشن ===== */
 .hero-section {
   text-align: left;
@@ -495,7 +502,7 @@ a:hover {
 /* ===== WORK EXPERIENCE & VOLUNTEER ===== */
 .work-experience-section,
 .volunteer-section {
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 .work-experience-section > h2,
@@ -503,7 +510,6 @@ a:hover {
   color: var(--heading-color);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid var(--heading-color);
 }
 
 .custom-job-item,
@@ -520,12 +526,6 @@ a:hover {
 .custom-volunteer-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: var(--card-border);
-}
-
-[data-theme="dark"] .custom-job-item:hover,
-[data-theme="dark"] .custom-volunteer-item:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   border-color: var(--card-border);
 }
 
@@ -593,14 +593,6 @@ a:hover {
   margin-bottom: 0.4rem;
   padding-left: 1rem;
   position: relative;
-}
-
-.custom-job-item li:before,
-.custom-volunteer-item li:before {
-  content: "•";
-  color: var(--brand-color);
-  position: absolute;
-  left: 0;
 }
   
 
