@@ -314,5 +314,220 @@ a:hover {
   padding-left: 0;
   margin-top: 0.5rem;
 }
+
+/* ===== استایل اسکیل‌ها ===== */
+.skills-section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-group {
+  width: 100%;
+  max-width: 900px;
+}
+
+.skills-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  justify-items: center;
+}
+
+.skill-box {
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(135deg, var(--card-bg), transparent);
+  border: 1px solid var(--card-border);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-color: var(--brand-color);
+}
+
+.skill-box img {
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease;
+  filter: grayscale(0.2);
+}
+
+.skill-box:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
+.skill-tooltip {
+  position: absolute;
+  top: -20px;
+  background: linear-gradient(135deg, var(--card-bg), var(--background-color));
+  color: var(--primary-text);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.skill-box:hover .skill-tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -25px;
+}
+
+/* ===== ریسپانسیو برای موبایل ===== */
+@media (max-width: 768px) {
+  /* هیرو سکشن */
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    max-width: 100%;
+  }
   
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  /* کارت‌های پروژه */
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .custom-project-card,
+  .custom-education-item {
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* اسکیل‌ها */
+  .skills-icons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .skill-box {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .skill-box img {
+    width: 65px;
+    height: 65px;
+  }
+  
+  /* عناوین */
+  .education-overview > h2,
+  .featured-projects > h2,
+  .skills-section > h2 {
+    font-size: 1.6rem;
+  }
+  
+  /* متن‌ها */
+  .custom-education-item h3,
+  .custom-project-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-section {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* برای گوشی‌های کوچک */
+  .hero-section {
+    padding: 1.5rem 0;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .skills-icons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .skill-box {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .skill-box img {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .custom-project-card ul {
+    padding-left: 1rem;
+  }
+  
+  .custom-project-card li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-grid {
+    gap: 1rem;
+  }
+}
+
+/* برای حالت landscape موبایل */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-content {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+}
 </style>
