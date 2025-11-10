@@ -54,6 +54,14 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 
 @import "yat";
 
+// Override header text colors
+.site-header,
+.site-header a,
+.site-header .page-link {
+  color: var(--heading-color) !important;
+  transition: color 0.3s ease;
+}
+
 /* استایل آیکون‌های اجتماعی بدون دایره */
 .social-links {
   margin-top: 0.5rem;
