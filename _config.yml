@@ -111,7 +111,7 @@ brand_color: "#91a7ff"
 
 # You can custom selection style
 selection:
-#  color: "#ffffff"
+  color: "#2F3032"
   background_color: "#ffecb2"
 
 # Night/Dark mode
