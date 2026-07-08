@@ -184,7 +184,7 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
     </div>
 </section>
 
-<!-- Certificates Section (عکس مستقیماً داخل بدنه و جای دکمه باز می‌شود) -->
+<!-- Certificates Section (چیدمان ۲×۲، دکمه پیش‌نمایش داخل بدنه) -->
 <section id="certificates" class="certificates-section reveal">
     <h2>CERTIFICATES</h2>
     <div class="cert-grid">
@@ -450,12 +450,31 @@ a:hover { color: var(--link-color); opacity: 0.8; text-decoration: underline; }
 .custom-job-item ul, .custom-volunteer-item ul { list-style: none; padding-left: 0; margin-top: 0.8rem; }
 .custom-job-item li, .custom-volunteer-item li { color: var(--primary-text); margin-bottom: 0.4rem; position: relative; }
 
-/* Certificates – بدون کادر خالی */
+/* ===== CERTIFICATES (چیدمان ۲×۲) ===== */
 .certificates-section, .languages-section { margin: 4rem 0; }
 .certificates-section > h2, .languages-section > h2 { color: var(--heading-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
-.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-.custom-cert-item { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 10px; overflow: hidden; transition: all 0.3s ease; display: flex; flex-direction: column; }
-.custom-cert-item:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border-color: var(--brand-color); }
+
+/* 🔹 تغییر اصلی: ستون‌ها همیشه ۲ تا */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.custom-cert-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.custom-cert-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-color: var(--brand-color);
+}
 
 .cert-body { padding: 1.5rem; }
 .custom-cert-item h3 { color: var(--brand-color); margin: 0 0 0.4rem 0; font-size: 1.1rem; }
@@ -525,6 +544,11 @@ a:hover { color: var(--link-color); opacity: 0.8; text-decoration: underline; }
   .skill-box img { width: 55px; height: 55px; }
   .job-header, .volunteer-header { flex-direction: column; gap: 0.3rem; }
   .job-meta, .volunteer-meta { text-align: left; }
+
+  /* 🔹 توی موبایل سرتیفیکیت‌ها تک ستون بشن */
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -551,14 +575,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }, { threshold: 0.12 });
   reveals.forEach(el => observer.observe(el));
 
-  // Toggle certificate preview (عکس جای دکمه)
+  // Toggle certificate preview
   document.querySelectorAll('.cert-preview-btn').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
       const card = this.closest('.custom-cert-item');
       const wrapper = card.querySelector('.cert-image-wrapper');
-      if (wrapper.style.display === 'none') {
+      if (wrapper.style.display === 'none' || wrapper.style.display === '') {
         wrapper.style.display = 'block';
-        this.style.display = 'none'; // دکمه ناپدید شود
+        this.style.display = 'none';
       } else {
         wrapper.style.display = 'none';
         this.style.display = 'inline-block';
@@ -568,7 +593,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // بستن عکس با کلیک روی خود تصویر
   document.querySelectorAll('.cert-image-wrapper img').forEach(img => {
-    img.addEventListener('click', function() {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();  // جلوی هرگونه رفتار ناخواسته مرورگر رو می‌گیره
       const card = this.closest('.custom-cert-item');
       const wrapper = card.querySelector('.cert-image-wrapper');
       const button = card.querySelector('.cert-preview-btn');
