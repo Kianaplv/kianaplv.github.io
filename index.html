@@ -169,39 +169,47 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Scientist"
 
     <div class="project-grid">
         <div class="custom-project-card">
-            <h3>🏠 Housing Price Prediction - Machine Learning</h3>
+            <h3>🖥️ Remote System Management</h3>
+            <p class="tech-stack">Cloudflare Tunnel · Docker · SSH</p>
             <ul>
-                <li>Collected and cleaned data from Divar</li>
-                <li>Built models using Linear Regression and XGBoost</li>
-                <li>Improved accuracy by 15% compared to baseline</li>
+                <li>Built a multi-user remote SSH management platform using Cloudflare Tunnel and Docker, enabling secure access without exposing ports</li>
+                <li>Designed isolated containerized environments per user to ensure security and resource separation</li>
             </ul>
+            <span class="private-badge">🔒 Private Project</span>
         </div>
 
         <div class="custom-project-card">
-            <h3>🛒 Shopping App with Java</h3>
+            <h3>🤖 Multi-Agent AI Workflow</h3>
+            <p class="tech-stack">OpenAI API · Ollama · Llama · Qwen · RAG</p>
             <ul>
-                <li>Collaborative project using Git</li>
-                <li>Implemented SOLID design patterns</li>
-                <li><a href="https://github.com/MohammadHosseinH/FlowerShop" target="_blank" rel="noopener">GitHub Repository</a></li>
+                <li>Designed a modular multi-agent system architecture with role-based agent specialization</li>
+                <li>Integrated OpenAI APIs and locally hosted LLMs (Llama, Qwen via Ollama) for flexible inference</li>
+                <li>Implemented a tool-calling framework enabling agents to interact with external APIs and data sources</li>
             </ul>
+            <span class="private-badge">🔒 Private Project</span>
         </div>
+    </div>
+</section>
 
-        <div class="custom-project-card">
-            <h3>📖 Hafez Poem and Interpretation Program</h3>
-            <ul>
-                <li>API integration learning</li>
-                <li>Java application development</li>
-                <li><a href="https://github.com/Kianaplv/Hafez-divination" target="_blank" rel="noopener">GitHub Repository</a></li>
-            </ul>
+<!-- Certificates Section -->
+<section id="certificates" class="certificates-section reveal">
+    <h2>CERTIFICATES</h2>
+    <div class="cert-grid">
+        <div class="custom-cert-item">
+            <h3>Data Analysis</h3>
+            <p class="cert-issuer">MFT Institute <span class="cert-date">· 2025</span></p>
         </div>
-
-        <div class="custom-project-card">
-            <h3>📰 RSS Feed Reader with Java</h3>
-            <ul>
-                <li>HTML source parsing</li>
-                <li>RSS feed processing</li>
-                <li><a href="https://github.com/Kianaplv/RSS-Reader" target="_blank" rel="noopener">GitHub Repository</a></li>
-            </ul>
+        <div class="custom-cert-item">
+            <h3>Machine Learning</h3>
+            <p class="cert-issuer">MFT Institute <span class="cert-date">· 2025</span></p>
+        </div>
+        <div class="custom-cert-item">
+            <h3>Git Practical Training</h3>
+            <p class="cert-issuer">Quera College <span class="cert-date">· 2025</span></p>
+        </div>
+        <div class="custom-cert-item">
+            <h3>Data Structures &amp; Algorithmic Thinking</h3>
+            <p class="cert-issuer">Quera College <span class="cert-date">· 2024</span></p>
         </div>
     </div>
 </section>
@@ -243,6 +251,21 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Scientist"
       <li>Developed communication and organizational skills</li>
     </ul>
   </div>
+
+  <!-- Languages Section -->
+<section id="languages" class="languages-section reveal">
+    <h2>LANGUAGES</h2>
+    <div class="lang-grid">
+        <div class="custom-lang-item">
+            <span class="lang-name">English</span>
+            <span class="lang-level">Full Professional Proficiency</span>
+        </div>
+        <div class="custom-lang-item">
+            <span class="lang-name">Persian</span>
+            <span class="lang-level">Native</span>
+        </div>
+    </div>
+</section>
 </div>
 
 <style>
@@ -501,6 +524,111 @@ a:hover {
 [data-theme="dark"] .custom-project-card:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
   border-color: var(--brand-color);
+}
+
+/* استایل تک‌استک پروژه‌ها */
+.tech-stack {
+  font-size: 0.85rem;
+  color: var(--secondary-text);
+  font-weight: 600;
+  margin: 0 0 0.75rem 0 !important;
+}
+
+/* برچسب پروژه‌ی خصوصی */
+.private-badge {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--secondary-text);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+}
+
+/* ===== CERTIFICATES ===== */
+.certificates-section,
+.languages-section {
+  margin: 4rem 0;
+}
+.certificates-section > h2,
+.languages-section > h2 {
+  color: var(--heading-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.custom-cert-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  transition: all 0.3s ease;
+}
+.custom-cert-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--brand-color);
+}
+[data-theme="dark"] .custom-cert-item:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  border-color: var(--brand-color);
+}
+.custom-cert-item h3 {
+  color: var(--brand-color);
+  margin: 0 0 0.4rem 0;
+  font-size: 1.1rem;
+}
+.cert-issuer {
+  color: var(--primary-text);
+  margin: 0;
+  font-size: 0.95rem;
+}
+.cert-date {
+  color: var(--secondary-text);
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+/* ===== LANGUAGES ===== */
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.custom-lang-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: all 0.3s ease;
+}
+.custom-lang-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--brand-color);
+}
+[data-theme="dark"] .custom-lang-item:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  border-color: var(--brand-color);
+}
+.lang-name {
+  font-weight: 700;
+  color: var(--brand-color);
+  font-size: 1.1rem;
+}
+.lang-level {
+  color: var(--secondary-text);
+  font-size: 0.95rem;
 }
 
 /* ===== گرید ===== */
