@@ -577,11 +577,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Toggle certificate preview
   document.querySelectorAll('.cert-preview-btn').forEach(button => {
-    button.addEventListener('click', function(e) {
-      e.preventDefault();
+    button.addEventListener('click', function() {
       const card = this.closest('.custom-cert-item');
       const wrapper = card.querySelector('.cert-image-wrapper');
-      if (wrapper.style.display === 'none' || wrapper.style.display === '') {
+      if (wrapper.style.display === 'none') {
         wrapper.style.display = 'block';
         this.style.display = 'none';
       } else {
@@ -593,9 +592,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // بستن عکس با کلیک روی خود تصویر
   document.querySelectorAll('.cert-image-wrapper img').forEach(img => {
-    img.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();  // جلوی هرگونه رفتار ناخواسته مرورگر رو می‌گیره
+    img.addEventListener('click', function() {
       const card = this.closest('.custom-cert-item');
       const wrapper = card.querySelector('.cert-image-wrapper');
       const button = card.querySelector('.cert-preview-btn');
