@@ -12,7 +12,7 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
   <a href="#projects">Projects</a>
   <a href="#certificates">Certificates</a>
   <a href="#languages">Languages</a>
-  <a href="/assets/Kiana_Pahlevan_cv.pdf" class="btn-primary" download>📄 Download CV</a>
+  <a href="/assets/Kiana_Pahlevan_cv.pdf" class="btn-primary nav-cv-btn" download>📄 CV</a>
 </nav>
 
 <div class="hero-section reveal">
@@ -22,6 +22,7 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
       <h1>Kiana Pahlevan</h1>
       <p class="subtitle">Computer Science Student | Junior Data Engineer</p>
       <div class="hero-actions">
+        <!-- دکمه دانلود رزومه از اینجا حذف و به ناوبری منتقل شد -->
       </div>
     </div>
   </div>
@@ -357,6 +358,7 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
   top: 0;
   z-index: 100;
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   padding: 0.8rem 0;
   margin-bottom: 1rem;
@@ -372,6 +374,26 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
 .section-nav a:hover {
   color: var(--brand-color);
   text-decoration: none;
+}
+
+/* دکمه CV در ناوبری */
+.nav-cv-btn {
+  margin-left: auto; /* می‌چسباند به سمت راست نوار */
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--brand-color);
+  color: #fff !important;
+  border: 1px solid var(--brand-color);
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+.nav-cv-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35);
 }
 
 html { scroll-behavior: smooth; }
@@ -416,7 +438,7 @@ section[id], div[id] { scroll-margin-top: 70px; }
   text-align: left;
 }
 
-/* ===== دکمه‌های هیرو ===== */
+/* ===== دکمه‌های هیرو (فعلاً خالی است ولی اگر بعداً چیزی اضافه کردید استایل دارد) ===== */
 .hero-actions {
   display: flex;
   gap: 1rem;
@@ -857,6 +879,7 @@ a:hover {
 /* ===== ریسپانسیو برای موبایل ===== */
 @media (max-width: 768px) {
   .section-nav { gap: 1rem; font-size: 0.85rem; }
+  .nav-cv-btn { margin-left: 0; } /* در موبایل margin-left: auto بر نمی‌دارد، ولی بهتر است وسط یا چپ بماند */
   .hero-content {
     flex-direction: column;
     text-align: center;
