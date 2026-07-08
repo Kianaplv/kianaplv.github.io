@@ -12,7 +12,7 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
   <a href="#projects">Projects</a>
   <a href="#certificates">Certificates</a>
   <a href="#languages">Languages</a>
-  <a href="/assets/Kiana_Pahlevan_cv.pdf" class="btn-primary nav-cv-btn" download> Download CV </a>
+  <a href="/assets/Kiana_Pahlevan_cv.pdf" class="btn-primary nav-cv-btn" download>📄 CV</a>
 </nav>
 
 <div class="hero-section reveal">
@@ -22,6 +22,7 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
       <h1>Kiana Pahlevan</h1>
       <p class="subtitle">Computer Science Student | Junior Data Engineer</p>
       <div class="hero-actions">
+        <!-- دکمه دانلود رزومه از اینجا حذف و به ناوبری منتقل شد -->
       </div>
     </div>
   </div>
@@ -184,13 +185,20 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
     </div>
 </section>
 
-<!-- Certificates Section -->
+<!-- Certificates Section (تصاویر مخفی با قابلیت نمایش با کلیک) -->
 <section id="certificates" class="certificates-section reveal">
     <h2>CERTIFICATES</h2>
     <div class="cert-grid">
 
         <div class="custom-cert-item">
-            <img src="{{ '/assets/certificates/data-analysis.jpeg' | relative_url }}" alt="Data Analysis Certificate" class="cert-image">
+            <div class="cert-image-container">
+                <div class="cert-image-wrapper" style="display: none;">
+                    <img src="{{ '/assets/certificates/data-analysis.jpeg' | relative_url }}" alt="Data Analysis Certificate" class="cert-image">
+                </div>
+                <button class="cert-preview-btn">
+                    🖼️ Preview Certificate
+                </button>
+            </div>
             <div class="cert-body">
                 <h3>Data Analysis</h3>
                 <p class="cert-issuer">Tehran Institute of Technology <span class="cert-date">· 2025</span></p>
@@ -200,7 +208,14 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
         </div>
 
         <div class="custom-cert-item">
-            <img src="{{ '/assets/certificates/machine-learning.jpeg' | relative_url }}" alt="Machine Learning Certificate" class="cert-image">
+            <div class="cert-image-container">
+                <div class="cert-image-wrapper" style="display: none;">
+                    <img src="{{ '/assets/certificates/machine-learning.jpeg' | relative_url }}" alt="Machine Learning Certificate" class="cert-image">
+                </div>
+                <button class="cert-preview-btn">
+                    🖼️ Preview Certificate
+                </button>
+            </div>
             <div class="cert-body">
                 <h3>Machine Learning</h3>
                 <p class="cert-issuer">Tehran Institute of Technology <span class="cert-date">· 2025</span></p>
@@ -210,7 +225,14 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
         </div>
 
         <div class="custom-cert-item">
-            <img src="{{ '/assets/certificates/git.jpeg' | relative_url }}" alt="Git Practical Training Certificate" class="cert-image">
+            <div class="cert-image-container">
+                <div class="cert-image-wrapper" style="display: none;">
+                    <img src="{{ '/assets/certificates/git.jpeg' | relative_url }}" alt="Git Practical Training Certificate" class="cert-image">
+                </div>
+                <button class="cert-preview-btn">
+                    🖼️ Preview Certificate
+                </button>
+            </div>
             <div class="cert-body">
                 <h3>Git Practical Training</h3>
                 <p class="cert-issuer">Quera College <span class="cert-date">· 2025</span></p>
@@ -219,7 +241,14 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
         </div>
 
         <div class="custom-cert-item">
-            <img src="{{ '/assets/certificates/data-structures.jpeg' | relative_url }}" alt="Data Structures Certificate" class="cert-image">
+            <div class="cert-image-container">
+                <div class="cert-image-wrapper" style="display: none;">
+                    <img src="{{ '/assets/certificates/data-structures.jpeg' | relative_url }}" alt="Data Structures Certificate" class="cert-image">
+                </div>
+                <button class="cert-preview-btn">
+                    🖼️ Preview Certificate
+                </button>
+            </div>
             <div class="cert-body">
                 <h3>Data Structures &amp; Algorithmic Thinking</h3>
                 <p class="cert-issuer">Quera College <span class="cert-date">· 2024</span></p>
@@ -437,7 +466,7 @@ section[id], div[id] { scroll-margin-top: 70px; }
   text-align: left;
 }
 
-/* ===== دکمه‌های هیرو (فعلاً خالی است ولی اگر بعداً چیزی اضافه کردید استایل دارد) ===== */
+/* ===== دکمه‌های هیرو (فعلاً خالی) ===== */
 .hero-actions {
   display: flex;
   gap: 1rem;
@@ -767,7 +796,7 @@ a:hover {
   position: relative;
 }
 
-/* ===== CERTIFICATES (با عکس) ===== */
+/* ===== CERTIFICATES (با قابلیت پیش‌نمایش) ===== */
 .certificates-section,
 .languages-section {
   margin: 4rem 0;
@@ -802,13 +831,49 @@ a:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
   border-color: var(--brand-color);
 }
-.cert-image {
+
+/* container عکس و دکمه */
+.cert-image-container {
   width: 100%;
   height: 180px;
-  object-fit: cover;
+  background: var(--card-bg);
   border-bottom: 1px solid var(--card-border);
-  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.cert-image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.cert-image-wrapper img.cert-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cert-preview-btn {
+  background: transparent;
+  border: 1px dashed var(--card-border);
+  color: var(--secondary-text);
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.cert-preview-btn:hover {
+  border-color: var(--brand-color);
+  color: var(--brand-color);
+  background: rgba(99, 102, 241, 0.05);
+}
+
 .cert-body {
   padding: 1.2rem 1.5rem;
 }
@@ -878,7 +943,7 @@ a:hover {
 /* ===== ریسپانسیو برای موبایل ===== */
 @media (max-width: 768px) {
   .section-nav { gap: 1rem; font-size: 0.85rem; }
-  .nav-cv-btn { margin-left: 0; } /* در موبایل margin-left: auto بر نمی‌دارد، ولی بهتر است وسط یا چپ بماند */
+  .nav-cv-btn { margin-left: 0; } /* در موبایل چسبندگی حذف می‌شود */
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -924,9 +989,10 @@ a:hover {
 }
 </style>
 
-<!-- ===== اسکریپت انیمیشن ورود ===== -->
+<!-- ===== اسکریپت انیمیشن ورود و Toggle سرتیفیکیت ===== -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  // انیمیشن reveal on scroll
   const reveals = document.querySelectorAll(".reveal");
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -937,5 +1003,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, { threshold: 0.12 });
   reveals.forEach((el) => observer.observe(el));
+
+  // Toggle certificate preview
+  document.querySelectorAll('.cert-preview-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const container = this.closest('.cert-image-container');
+      const wrapper = container.querySelector('.cert-image-wrapper');
+      const isHidden = wrapper.style.display === 'none';
+      if (isHidden) {
+        wrapper.style.display = 'block';
+        this.style.display = 'none'; // دکمه مخفی می‌شود
+      } else {
+        wrapper.style.display = 'none';
+        this.style.display = 'block';
+      }
+    });
+  });
+
+  // کلیک روی خود عکس برای بستن آن
+  document.querySelectorAll('.cert-image-wrapper img').forEach(img => {
+    img.addEventListener('click', function() {
+      const wrapper = this.closest('.cert-image-wrapper');
+      const container = wrapper.closest('.cert-image-container');
+      const button = container.querySelector('.cert-preview-btn');
+      wrapper.style.display = 'none';
+      button.style.display = 'block';
+    });
+  });
 });
 </script>
