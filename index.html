@@ -184,7 +184,7 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
     </div>
 </section>
 
-<!-- Certificates Section (تصاویر مخفی با قابلیت نمایش با کلیک) -->
+<!-- Certificates Section (دکمه پیش‌نمایش بالای Show Credential) -->
 <section id="certificates" class="certificates-section reveal">
     <h2>CERTIFICATES</h2>
     <div class="cert-grid">
@@ -194,14 +194,14 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
                 <div class="cert-image-wrapper" style="display: none;">
                     <img src="{{ '/assets/certificates/data-analysis.jpeg' | relative_url }}" alt="Data Analysis Certificate" class="cert-image">
                 </div>
-                <button class="cert-preview-btn">
-                    🖼️ Preview Certificate
-                </button>
             </div>
             <div class="cert-body">
                 <h3>Data Analysis</h3>
                 <p class="cert-issuer">Tehran Institute of Technology <span class="cert-date">· 2025</span></p>
                 <p class="cert-desc">Completed with distinction (98/100). Worked with real-world datasets covering data cleaning, analysis, and visualization using Python.</p>
+                <button class="cert-preview-btn">
+                    🖼️ Preview Certificate
+                </button>
                 <a href="https://mftplus.com/verifycertificate?auto=1&nationalcode=0150924402&code=1920215" target="_blank" rel="noopener" class="cert-link"> Show Credential</a>
             </div>
         </div>
@@ -211,14 +211,14 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
                 <div class="cert-image-wrapper" style="display: none;">
                     <img src="{{ '/assets/certificates/machine-learning.jpeg' | relative_url }}" alt="Machine Learning Certificate" class="cert-image">
                 </div>
-                <button class="cert-preview-btn">
-                    🖼️ Preview Certificate
-                </button>
             </div>
             <div class="cert-body">
                 <h3>Machine Learning</h3>
                 <p class="cert-issuer">Tehran Institute of Technology <span class="cert-date">· 2025</span></p>
                 <p class="cert-desc">Completed with distinction (98/100). Hands-on work with neural networks and machine learning models in Python.</p>
+                <button class="cert-preview-btn">
+                    🖼️ Preview Certificate
+                </button>
                 <a href="https://mftplus.com/verifycertificate?auto=1&nationalcode=0150924402&code=1920215" target="_blank" rel="noopener" class="cert-link"> Show Credential</a>
             </div>
         </div>
@@ -228,13 +228,13 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
                 <div class="cert-image-wrapper" style="display: none;">
                     <img src="{{ '/assets/certificates/git.jpeg' | relative_url }}" alt="Git Practical Training Certificate" class="cert-image">
                 </div>
-                <button class="cert-preview-btn">
-                    🖼️ Preview Certificate
-                </button>
             </div>
             <div class="cert-body">
                 <h3>Git Practical Training</h3>
                 <p class="cert-issuer">Quera College <span class="cert-date">· 2025</span></p>
+                <button class="cert-preview-btn">
+                    🖼️ Preview Certificate
+                </button>
                 <a href="https://quera.org/certificate/sC0QtitQ/" target="_blank" rel="noopener" class="cert-link"> Show Credential</a>
             </div>
         </div>
@@ -244,13 +244,13 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
                 <div class="cert-image-wrapper" style="display: none;">
                     <img src="{{ '/assets/certificates/data-structures.jpeg' | relative_url }}" alt="Data Structures Certificate" class="cert-image">
                 </div>
-                <button class="cert-preview-btn">
-                    🖼️ Preview Certificate
-                </button>
             </div>
             <div class="cert-body">
                 <h3>Data Structures &amp; Algorithmic Thinking</h3>
                 <p class="cert-issuer">Quera College <span class="cert-date">· 2024</span></p>
+                <button class="cert-preview-btn">
+                    🖼️ Preview Certificate
+                </button>
                 <a href="https://quera.org/certificate/GS3XJhAv/" target="_blank" rel="noopener" class="cert-link"> Show Credential</a>
             </div>
         </div>
@@ -297,7 +297,6 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
   </div>
 </div>
 
-
 <!-- Languages Section -->
 <section id="languages" class="languages-section reveal">
     <h2>LANGUAGES</h2>
@@ -315,7 +314,6 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
 
 <style>
 :root {
-  /* ===== رنگ‌های حالت لایت ===== */
   --light-primary-text: #2F3032;
   --light-secondary-text: #6b7280;
   --light-heading-color: #0B0D0F;
@@ -325,7 +323,6 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
   --light-card-border: #e2e4e8;
   --light-signs: #727278;
 
-  /* ===== رنگ‌های حالت دارک ===== */
   --dark-primary-text: #E7E9E9;
   --dark-secondary-text: #9CA3AF;
   --dark-heading-color: #74c0fc;
@@ -336,7 +333,6 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
   --dark-signs: #CDCDD0;
 }
 
-/* پیش‌فرض: حالت لایت */
 :root {
   --primary-text: var(--light-primary-text);
   --secondary-text: var(--light-secondary-text);
@@ -348,7 +344,6 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
   --sign-color: var(--light-signs);
 }
 
-/* حالت دارک */
 [data-theme="dark"] {
   --primary-text: var(--dark-primary-text);
   --secondary-text: var(--dark-secondary-text);
@@ -360,13 +355,6 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
   --sign-color: var(--dark-signs);
 }
 
-[data-theme="dark"] .custom-job-item:hover,
-[data-theme="dark"] .custom-volunteer-item:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-  border-color: var(--brand-color);
-}
-
-/* ===== انیمیشن ورود (reveal on scroll) ===== */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -376,11 +364,7 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
   opacity: 1;
   transform: translateY(0);
 }
-@media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
-}
 
-/* ===== NAVBAR سکشن‌ها ===== */
 .section-nav {
   position: sticky;
   top: 0;
@@ -404,9 +388,8 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
   text-decoration: none;
 }
 
-/* دکمه CV در ناوبری */
 .nav-cv-btn {
-  margin-left: auto; /* می‌چسباند به سمت راست نوار */
+  margin-left: auto;
   padding: 0.4rem 1.2rem;
   font-size: 0.9rem;
   font-weight: 600;
@@ -427,607 +410,155 @@ description: "Kiana Pahlevan - Computer Science student & Junior Data Engineer"
 html { scroll-behavior: smooth; }
 section[id], div[id] { scroll-margin-top: 70px; }
 
-/* ===== استایل هیرو سکشن ===== */
-.hero-section {
-  text-align: left;
-  padding: 3rem 0;
-  margin-bottom: 2rem;
-}
+.hero-section { text-align: left; padding: 3rem 0; margin-bottom: 2rem; }
+.hero-content { display: flex; align-items: center; justify-content: flex-start; gap: 5rem; max-width: 900px; margin: 0; flex-direction: row-reverse; }
+.avatar { width: 190px; height: 190px; object-fit: cover; border-radius: 50%; pointer-events: none; }
+.hero-text h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--heading-color); text-align: left; }
+.subtitle { font-size: 1.2rem; color: var(--secondary-text); margin: 0 0 1.5rem 0; text-align: left; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-primary, .btn-outline { display: inline-block; padding: 0.6rem 1.4rem; border-radius: 8px; font-weight: 600; font-size: 0.95rem; transition: all 0.25s ease; }
+.btn-primary { background: var(--brand-color); color: #fff !important; border: 1px solid var(--brand-color); }
+.btn-primary:hover { opacity: 0.9; transform: translateY(-2px); text-decoration: none; box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35); }
+.btn-outline { background: transparent; color: var(--brand-color) !important; border: 1px solid var(--brand-color); }
+.btn-outline:hover { background: var(--brand-color); color: #fff !important; transform: translateY(-2px); text-decoration: none; }
 
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 5rem;
-  max-width: 900px;
-  margin: 0;
-  flex-direction: row-reverse;
-}
+body { color: var(--primary-text); }
+.about-section > h2, .education-overview > h2, .featured-projects > h2 { color: var(--heading-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+.custom-education-item h3, .custom-project-card h3 { color: var(--brand-color); margin-top: 0; margin-bottom: 0.5rem; border-bottom: 1px solid var(--card-border); }
+.custom-education-item p, .custom-project-card p { color: var(--primary-text); margin-bottom: 0.5rem; }
+.about-section > p { color: var(--primary-text); margin-bottom: 0.5rem; font-size: 1.05rem; line-height: 1.7; }
+.custom-project-card li { color: var(--primary-text); margin-bottom: 0.25rem; }
+.text-secondary { color: var(--secondary-text); }
 
-.avatar {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 50%;
-  pointer-events: none;
-}
+a { color: var(--link-color); text-decoration: none; font-weight: 500; transition: all 0.2s ease; }
+a:hover { color: var(--link-color); opacity: 0.8; text-decoration: underline; }
 
-.hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--heading-color);
-  text-align: left;
-}
+.custom-project-card, .custom-education-item { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 10px; padding: 1.5rem; transition: all 0.3s ease; margin-bottom: 1.5rem; }
+.custom-education-item:hover, .custom-project-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border-color: var(--brand-color); }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+.education-overview { margin: 2rem 0; }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: var(--secondary-text);
-  margin: 0 0 1.5rem 0;
-  text-align: left;
-}
+.tech-stack { font-size: 0.85rem; color: var(--secondary-text); font-weight: 600; margin: 0 0 0.75rem 0 !important; }
+.private-badge { display: inline-block; margin-top: 0.75rem; padding: 0.25rem 0.7rem; font-size: 0.78rem; font-weight: 600; color: var(--secondary-text); background: transparent; border: 1px solid var(--card-border); border-radius: 20px; }
 
-/* ===== دکمه‌های هیرو (فعلاً خالی) ===== */
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.btn-primary, .btn-outline {
-  display: inline-block;
-  padding: 0.6rem 1.4rem;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: all 0.25s ease;
-}
-.btn-primary {
-  background: var(--brand-color);
-  color: #fff !important;
-  border: 1px solid var(--brand-color);
-}
-.btn-primary:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-  text-decoration: none;
-  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35);
-}
-.btn-outline {
-  background: transparent;
-  color: var(--brand-color) !important;
-  border: 1px solid var(--brand-color);
-}
-.btn-outline:hover {
-  background: var(--brand-color);
-  color: #fff !important;
-  transform: translateY(-2px);
-  text-decoration: none;
-}
+.skills-section h2 { margin: 3rem 0 1rem 0; text-align: left; color: var(--heading-color); }
+.skills-container { display: flex; justify-content: center; }
+.skills-group { width: 100%; max-width: 900px; }
+.skills-icons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; justify-items: center; }
+.skill-box { width: 140px; height: 140px; background: linear-gradient(135deg, var(--card-bg), transparent); border: 1px solid var(--card-border); border-radius: 24px; display: flex; align-items: center; justify-content: center; position: relative; transition: all 0.3s ease; cursor: pointer; }
+.skill-box:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-color: var(--brand-color); }
+.skill-box img { width: 70px; height: 70px; transition: all 0.3s ease; filter: grayscale(0.2); }
+.skill-box:hover img { transform: scale(1.1); filter: grayscale(0); }
+.skill-tooltip { position: absolute; top: -20px; background: var(--card-bg); color: var(--primary-text); padding: 6px 12px; border-radius: 8px; font-size: 0.9rem; font-weight: 600; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; border: 1px solid var(--card-border); box-shadow: 0 6px 20px rgba(0,0,0,0.15); z-index: 10; }
+.skill-box:hover .skill-tooltip { opacity: 1; visibility: visible; top: -30px; }
 
-/* ===== استایل‌های اصلی متن ===== */
-body {
-  color: var(--primary-text);
-}
+.work-experience-section, .volunteer-section { margin: 4rem 0; }
+.work-experience-section > h2, .volunteer-section > h2 { color: var(--heading-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+.custom-job-item, .custom-volunteer-item { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 10px; padding: 1.5rem; transition: all 0.3s ease; margin-bottom: 1.5rem; }
+.custom-job-item:hover, .custom-volunteer-item:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border-color: var(--brand-color); }
+.custom-job-item h3, .custom-volunteer-item h3 { color: var(--brand-color); margin-top: 0; margin-bottom: 0.5rem; border-bottom: 1px solid var(--card-border); padding-bottom: 0.5rem; }
+.job-header, .volunteer-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; }
+.job-meta, .volunteer-meta { text-align: right; }
+.company, .organization { color: var(--brand-color); font-weight: 600; margin-bottom: 0.5rem; }
+.job-date, .volunteer-date { color: var(--secondary-text); font-style: italic; font-size: 0.9rem; }
+.course-item { margin-bottom: 0.8rem; }
+.course-name { font-weight: 600; color: var(--primary-text); }
+.instructor { color: var(--secondary-text); font-size: 0.9rem; margin-left: 0.5rem; }
+.custom-job-item ul, .custom-volunteer-item ul { list-style: none; padding-left: 0; margin-top: 0.8rem; }
+.custom-job-item li, .custom-volunteer-item li { color: var(--primary-text); margin-bottom: 0.4rem; position: relative; }
 
-.about-section > h2,
-.education-overview > h2,
-.featured-projects > h2 {
-  color: var(--heading-color);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-}
+.certificates-section, .languages-section { margin: 4rem 0; }
+.certificates-section > h2, .languages-section > h2 { color: var(--heading-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.custom-cert-item { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 10px; overflow: hidden; transition: all 0.3s ease; display: flex; flex-direction: column; }
+.custom-cert-item:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border-color: var(--brand-color); }
 
-.custom-education-item h3,
-.custom-project-card h3 {
-  color: var(--brand-color);
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--card-border);
-}
+.cert-image-container { width: 100%; height: 180px; background: var(--card-bg); border-bottom: 1px solid var(--card-border); display: flex; align-items: center; justify-content: center; }
+.cert-image-wrapper { width: 100%; height: 100%; }
+.cert-image-wrapper img.cert-image { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-.custom-education-item p,
-.custom-project-card p {
-  color: var(--primary-text);
-  margin-bottom: 0.5rem;
-}
+.cert-preview-btn { background: transparent; border: 1px dashed var(--card-border); color: var(--secondary-text); padding: 0.4rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 500; transition: all 0.2s ease; margin: 0.6rem 0 0.3rem 0; display: inline-block; }
+.cert-preview-btn:hover { border-color: var(--brand-color); color: var(--brand-color); background: rgba(99,102,241,0.05); }
 
-.about-section > p {
-  color: var(--primary-text);
-  margin-bottom: 0.5rem;
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
+.cert-body { padding: 1.2rem 1.5rem; }
+.custom-cert-item h3 { color: var(--brand-color); margin: 0 0 0.4rem 0; font-size: 1.1rem; }
+.cert-issuer { color: var(--primary-text); margin: 0 0 0.5rem 0; font-size: 0.95rem; }
+.cert-date { color: var(--secondary-text); font-style: italic; font-size: 0.85rem; }
+.cert-desc { color: var(--secondary-text); font-size: 0.9rem; line-height: 1.5; margin: 0 0 0.75rem 0; }
+.cert-link { display: inline-block; font-size: 0.9rem; font-weight: 600; color: var(--brand-color); }
 
-.custom-project-card li {
-  color: var(--primary-text);
-  margin-bottom: 0.25rem;
-}
+.lang-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+.custom-lang-item { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 10px; padding: 1.2rem 1.5rem; display: flex; flex-direction: column; gap: 0.3rem; transition: all 0.3s ease; }
+.custom-lang-item:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border-color: var(--brand-color); }
+.lang-name { font-weight: 700; color: var(--brand-color); font-size: 1.1rem; }
+.lang-level { color: var(--secondary-text); font-size: 0.95rem; }
 
-.text-secondary {
-  color: var(--secondary-text);
-}
-
-/* ===== استایل لینک‌ها ===== */
-a {
-  color: var(--link-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-a:hover {
-  color: var(--link-color);
-  opacity: 0.8;
-  text-decoration: underline;
-}
-.custom-project-card a,
-.custom-education-item a {
-  color: var(--link-color);
-}
-
-/* ===== استایل کارت‌ها ===== */
-.custom-project-card,
-.custom-education-item {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  margin-bottom: 1.5rem;
-}
-
-.custom-education-item:hover,
-.custom-project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: var(--brand-color);
-}
-
-[data-theme="dark"] .custom-education-item:hover,
-[data-theme="dark"] .custom-project-card:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-  border-color: var(--brand-color);
-}
-
-/* ===== گرید ===== */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-.education-overview {
-  margin: 2rem 0;
-}
-
-.custom-education-item {
-  margin-bottom: 1.5rem;
-}
-
-.custom-project-card h3 {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.custom-project-card ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0.5rem;
-}
-.custom-project-card li {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0.5rem;
-}
-
-/* استایل تک‌استک پروژه‌ها */
-.tech-stack {
-  font-size: 0.85rem;
-  color: var(--secondary-text);
-  font-weight: 600;
-  margin: 0 0 0.75rem 0 !important;
-}
-
-/* برچسب پروژه‌ی خصوصی */
-.private-badge {
-  display: inline-block;
-  margin-top: 0.75rem;
-  padding: 0.25rem 0.7rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--secondary-text);
-  background: transparent;
-  border: 1px solid var(--card-border);
-  border-radius: 20px;
-}
-
-/* ===== استایل اسکیل‌ها ===== */
-.skills-section h2 {
-  margin: 3rem 0 1rem 0;
-  text-align: left;
-  color: var(--heading-color);
-}
-
-.skills-container {
-  display: flex;
-  justify-content: center;
-}
-.skills-group {
-  width: 100%;
-  max-width: 900px;
-}
-.skills-icons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  justify-items: center;
-}
-
-.skill-box {
-  width: 140px;
-  height: 140px;
-  background: linear-gradient(135deg, var(--card-bg), transparent);
-  border: 1px solid var(--card-border);
-  border-radius: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-.skill-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  border-color: var(--brand-color);
-}
-.skill-box img {
-  width: 70px;
-  height: 70px;
-  transition: all 0.3s ease;
-  filter: grayscale(0.2);
-}
-.skill-box:hover img {
-  transform: scale(1.1);
-  filter: grayscale(0);
-}
-.skill-tooltip {
-  position: absolute;
-  top: -20px;
-  background: var(--card-bg);
-  color: var(--primary-text);
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  border: 1px solid var(--card-border);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  z-index: 10;
-}
-.skill-box:hover .skill-tooltip {
-  opacity: 1;
-  visibility: visible;
-  top: -30px;
-}
-
-/* ===== WORK EXPERIENCE & VOLUNTEER ===== */
-.work-experience-section,
-.volunteer-section {
-  margin: 4rem 0;
-}
-.work-experience-section > h2,
-.volunteer-section > h2 {
-  color: var(--heading-color);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-.custom-job-item,
-.custom-volunteer-item {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  margin-bottom: 1.5rem;
-}
-.custom-job-item:hover,
-.custom-volunteer-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: var(--brand-color);
-}
-.custom-job-item h3,
-.custom-volunteer-item h3 {
-  color: var(--brand-color);
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--card-border);
-  padding-bottom: 0.5rem;
-}
-.job-header,
-.volunteer-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.5rem;
-}
-.job-meta,
-.volunteer-meta {
-  text-align: right;
-}
-.company,
-.organization {
-  color: var(--brand-color);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-.job-date,
-.volunteer-date {
-  color: var(--secondary-text);
-  font-style: italic;
-  font-size: 0.9rem;
-}
-.course-item {
-  margin-bottom: 0.8rem;
-}
-.course-name {
-  font-weight: 600;
-  color: var(--primary-text);
-}
-.instructor {
-  color: var(--secondary-text);
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
-}
-.custom-job-item ul,
-.custom-volunteer-item ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0.8rem;
-}
-.custom-job-item li,
-.custom-volunteer-item li {
-  color: var(--primary-text);
-  margin-bottom: 0.4rem;
-  position: relative;
-}
-
-/* ===== CERTIFICATES (با قابلیت پیش‌نمایش) ===== */
-.certificates-section,
-.languages-section {
-  margin: 4rem 0;
-}
-.certificates-section > h2,
-.languages-section > h2 {
-  color: var(--heading-color);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-.custom-cert-item {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-.custom-cert-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: var(--brand-color);
-}
-[data-theme="dark"] .custom-cert-item:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-  border-color: var(--brand-color);
-}
-
-/* container عکس و دکمه */
-.cert-image-container {
-  width: 100%;
-  height: 180px;
-  background: var(--card-bg);
-  border-bottom: 1px solid var(--card-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cert-image-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.cert-image-wrapper img.cert-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.cert-preview-btn {
-  background: transparent;
-  border: 1px dashed var(--card-border);
-  color: var(--secondary-text);
-  padding: 0.5rem 1.2rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-}
-
-.cert-preview-btn:hover {
-  border-color: var(--brand-color);
-  color: var(--brand-color);
-  background: rgba(99, 102, 241, 0.05);
-}
-
-.cert-body {
-  padding: 1.2rem 1.5rem;
-}
-.custom-cert-item h3 {
-  color: var(--brand-color);
-  margin: 0 0 0.4rem 0;
-  font-size: 1.1rem;
-}
-.cert-issuer {
-  color: var(--primary-text);
-  margin: 0 0 0.5rem 0;
-  font-size: 0.95rem;
-}
-.cert-date {
-  color: var(--secondary-text);
-  font-style: italic;
-  font-size: 0.85rem;
-}
-.cert-desc {
-  color: var(--secondary-text);
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin: 0 0 0.75rem 0;
-}
-.cert-link {
-  display: inline-block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--brand-color);
-}
-
-/* ===== LANGUAGES ===== */
-.lang-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-}
-.custom-lang-item {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  padding: 1.2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  transition: all 0.3s ease;
-}
-.custom-lang-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: var(--brand-color);
-}
-[data-theme="dark"] .custom-lang-item:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-  border-color: var(--brand-color);
-}
-.lang-name {
-  font-weight: 700;
-  color: var(--brand-color);
-  font-size: 1.1rem;
-}
-.lang-level {
-  color: var(--secondary-text);
-  font-size: 0.95rem;
-}
-
-/* ===== ریسپانسیو برای موبایل ===== */
 @media (max-width: 768px) {
   .section-nav { gap: 1rem; font-size: 0.85rem; }
-  .nav-cv-btn { margin-left: 0; } /* در موبایل چسبندگی حذف می‌شود */
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-    max-width: 100%;
-  }
+  .nav-cv-btn { margin-left: 0; }
+  .hero-content { flex-direction: column; text-align: center; gap: 2rem; max-width: 100%; }
   .avatar { width: 150px; height: 150px; }
   .hero-text h1 { font-size: 2rem; text-align: center; }
   .subtitle { font-size: 1.1rem; text-align: center; }
   .hero-actions { justify-content: center; }
   .project-grid { grid-template-columns: 1fr; gap: 1rem; }
-  .custom-project-card,
-  .custom-education-item { padding: 1.2rem; margin-bottom: 1.2rem; }
+  .custom-project-card, .custom-education-item { padding: 1.2rem; margin-bottom: 1.2rem; }
   .skills-icons { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
   .skill-box { width: 110px; height: 110px; }
   .skill-box img { width: 55px; height: 55px; }
-  .education-overview > h2,
-  .featured-projects > h2,
-  .skills-section > h2 { font-size: 1.6rem; }
-  .custom-education-item h3,
-  .custom-project-card h3 { font-size: 1.2rem; }
-  .hero-section { padding: 2rem 0; }
   .job-header, .volunteer-header { flex-direction: column; gap: 0.3rem; }
   .job-meta, .volunteer-meta { text-align: left; }
 }
 
 @media (max-width: 480px) {
-  .hero-section { padding: 1.5rem 0; }
   .avatar { width: 120px; height: 120px; }
   .hero-text h1 { font-size: 1.8rem; }
   .subtitle { font-size: 1rem; }
   .skills-icons { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
   .skill-box { width: 95px; height: 95px; }
   .skill-box img { width: 48px; height: 48px; }
-  .custom-project-card li { font-size: 0.9rem; margin-bottom: 0.5rem; }
-  .project-grid { gap: 1rem; }
-}
-
-@media (max-width: 768px) and (orientation: landscape) {
-  .hero-content { flex-direction: row; gap: 2rem; }
-  .avatar { width: 100px; height: 100px; }
-  .hero-text h1 { font-size: 1.8rem; }
 }
 </style>
 
-<!-- ===== اسکریپت انیمیشن ورود و Toggle سرتیفیکیت ===== -->
+<!-- اسکریپت‌ها -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  // انیمیشن reveal on scroll
+  // Reveal on scroll
   const reveals = document.querySelectorAll(".reveal");
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("is-visible");
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.12 });
-  reveals.forEach((el) => observer.observe(el));
+  reveals.forEach(el => observer.observe(el));
 
-  // Toggle certificate preview
+  // Toggle certificate preview (دکمه در cert-body قرار دارد)
   document.querySelectorAll('.cert-preview-btn').forEach(button => {
     button.addEventListener('click', function() {
-      const container = this.closest('.cert-image-container');
+      const card = this.closest('.custom-cert-item');
+      const container = card.querySelector('.cert-image-container');
       const wrapper = container.querySelector('.cert-image-wrapper');
-      const isHidden = wrapper.style.display === 'none';
-      if (isHidden) {
+      if (wrapper.style.display === 'none') {
         wrapper.style.display = 'block';
-        this.style.display = 'none'; // دکمه مخفی می‌شود
+        this.style.display = 'none'; 
       } else {
         wrapper.style.display = 'none';
-        this.style.display = 'block';
+        this.style.display = 'inline-block';
       }
     });
   });
 
-  // کلیک روی خود عکس برای بستن آن
+  // بستن عکس با کلیک روی خود تصویر
   document.querySelectorAll('.cert-image-wrapper img').forEach(img => {
     img.addEventListener('click', function() {
-      const wrapper = this.closest('.cert-image-wrapper');
-      const container = wrapper.closest('.cert-image-container');
-      const button = container.querySelector('.cert-preview-btn');
+      const card = this.closest('.custom-cert-item');
+      const wrapper = card.querySelector('.cert-image-wrapper');
+      const button = card.querySelector('.cert-preview-btn');
       wrapper.style.display = 'none';
-      button.style.display = 'block';
+      button.style.display = 'inline-block';
     });
   });
 });
